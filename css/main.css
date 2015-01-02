@@ -1,18 +1,20 @@
+/*full body of the site*/
 body {
-   background-color: #000000;  
+   background-color: #F5D76E;  
    font: 12px/1.4em Arial,sans-serif;
 }
 
+/*This wraps the header, body and big logo*/
 #wrap {
-   margin: 10px auto;        
-   background: #666;
+   margin: 0px auto;        
+   background: #FFFFFF;
    padding: 10px;
    width: 700px;
 }
 
-/*header before the navbar*/
+/*header before the navbar. Should be a huge image.*/
 #header {
-   background-color: #F5D76E;
+   background-color: #F4D03F;
    color: #FFF; /*text font color*/
 }
 #logo {
