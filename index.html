@@ -4,51 +4,88 @@ title: Doyung Lee, Cat Patrol
 ---
 
 <html>
-	<head>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-		<meta charset=utf-8 />
-		<title>Title Here </title>
-		<script>
-			$(function(){ alert("begin!"); });
-			var navPos = $('#nav').offset().top;
-			$(function(){ alert("begin2222!"); });
-			$(function(){ alert(navPos); });
-			$(window).scroll(function(){
-			  alert("hello!");
-			  var fixIT = $(this).scrollTop() >= navPos;
-			  var setPos = fixIT ? 'fixed' : 'relative' ;
-			  var logoSH = fixIT ? 'show' : 'hide' ;
-			 
-			  $('#nav').css({position: setPos});
-			  $('#mini-logo')[logoSH](300);
-
-			});
-		</script>
-	</head>
-	<body>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Demo - Creating a Floating Navigation Menu</title>
   
+  <!-- Include jQuery -->
+  <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+
+<script type='text/javascript'>
+	$(function() {
+	    // Stick the #nav to the top of the window
+	    var nav = $('#nav');
+	    var navHomeY = nav.offset().top;
+	    var isFixed = false;
+	    var $w = $(window);
+	    $w.scroll(function() {
+	        var scrollTop = $w.scrollTop();
+	        var shouldBeFixed = scrollTop > navHomeY;
+	        if (shouldBeFixed && !isFixed) {
+	            nav.css({
+	                position: 'fixed',
+	                top: 0,
+	                left: nav.offset().left,
+	                width: nav.width()
+	            });
+	            isFixed = true;
+	        }
+	        else if (!shouldBeFixed && isFixed)
+	        {
+	            nav.css({
+	                position: 'static'
+	            });
+	            isFixed = false;
+	        }
+	    });
+	});  
+</script>
+
+
+</head>
+<body>
+
+<div id="wrap">
+    
+    <!-- The header code, including the menu -->
+    <div id="header">
+        <div id="logo">Start Slowly Scrolling Down<br /> This Page!</div>
+        <div id="navWrap">
+            <div id="nav">
+                <ul>
+                    <li><a href="#" class="smoothScroll">Demo Link 1</a></li>
+                    <li><a href="#" class="smoothScroll">Demo Link 2</a></li>
+                    <li><a href="#" class="smoothScroll">Demo Link 3</a></li>
+                    <li><a href="#" class="smoothScroll">Demo Link 4</a></li>
+                </ul>    
+                <br class="clearLeft" />
+            </div>
+        </div>
+    </div>
+    
+    <!-- The main page content (just filler for this demo) -->
+    <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta justo in tellus porttitor non placerat dui pulvinar. Aliquam erat volutpat. Morbi ullamcorper libero sit amet tortor porta iaculis. Duis sit amet diam dolor. Mauris bibendum pharetra justo, sed ornare arcu scelerisque vitae. Integer molestie dignissim lacinia. Etiam sagittis consectetur iaculis. Pellentesque fringilla nulla at tortor dictum lobortis.
+    </p>
+    <p>
+    Aliquam erat volutpat. Integer pulvinar dignissim lacus eu lacinia. Sed vitae orci eget nisl ultricies feugiat quis ut velit. Sed urna mauris, viverra volutpat pulvinar et, tempus vel odio. Aenean at posuere massa. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam quis augue nisi, quis ornare nisl. Nulla sagittis neque at massa venenatis tincidunt. Morbi sed nibh magna, vel consectetur nisi. Nullam tortor augue, scelerisque et consequat eu, fermentum at eros. Donec scelerisque ullamcorper tincidunt.
+    </p>
+    <p>
+    Pellentesque ut nulla dolor. Sed non diam odio, ac luctus mauris. Nunc erat turpis, imperdiet vel laoreet laoreet, scelerisque vel dui. Sed nec nisl nulla, ut gravida neque. Mauris augue nibh, accumsan id viverra et, pellentesque a orci. Integer venenatis congue urna a ornare. Fusce in facilisis tortor. In lobortis est non lacus cursus venenatis. Donec a metus erat, id rhoncus turpis. Quisque vitae venenatis tellus. Donec quis risus erat, in luctus justo. Nulla ultrices, urna quis faucibus vehicula, lorem nibh tristique magna, nec tristique augue massa sit amet arcu. Donec malesuada, erat iaculis pretium ultricies, lorem nisl lacinia tellus, vel luctus augue nunc eget metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque dignissim, orci ut ultrices aliquet, enim nisl auctor magna, nec feugiat eros lorem vehicula ipsum.
+    </p>
+    <p>
+    Maecenas vitae mauris enim, vel pretium turpis. Sed pharetra accumsan tellus. Maecenas pulvinar ipsum viverra sapien volutpat blandit. Vivamus vel massa velit. Pellentesque condimentum tincidunt aliquam. Vivamus mattis auctor diam, eu commodo massa laoreet ut. Sed congue faucibus arcu, quis hendrerit nisl pellentesque non. Nunc sagittis condimentum lacus. Cras tincidunt sem quis lorem tempor eget porta magna pulvinar. Donec molestie diam sagittis sem tristique in iaculis ligula aliquet. Aenean rutrum eleifend metus nec tempus. Integer nisi ligula, pretium in porta vel, euismod non lectus. Aliquam erat volutpat. Praesent sit amet massa purus.
+    </p>
+    <p>
+    Ut pellentesque, lectus ut porttitor ullamcorper, velit nulla dignissim tellus, eu luctus nibh mauris non arcu. Mauris viverra purus et leo condimentum adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam condimentum facilisis lacus, quis rutrum purus tristique non. Nam vestibulum mauris eu sem porttitor accumsan. Phasellus at eleifend neque. Nam interdum ultrices commodo. Nunc dignissim aliquet dui. Nunc id nisl congue dolor pharetra pulvinar vel ac lectus. Nunc mi justo, semper id sollicitudin et, luctus eget quam. Ut condimentum porta consectetur. Donec nunc turpis, molestie ac semper ut, aliquet id nulla. Vestibulum id ipsum purus, sed tempor lacus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+    </p>
+    <p>
+    Aliquam erat volutpat. Duis euismod porta eros. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque porta tincidunt gravida. Praesent sed mi nisl, non pretium mi. Suspendisse nibh orci, mollis eget adipiscing id, malesuada quis enim. Nullam facilisis elit ut magna facilisis ac eleifend diam tempor. Curabitur et justo est, a sagittis velit. Proin mollis, libero ac luctus faucibus, ipsum risus consequat dolor, viverra sagittis felis lorem non quam. Nam risus nisl, congue a semper eu, dapibus ac nunc. Maecenas tortor nisl, pellentesque eu luctus at, viverra ut libero. Nullam quis egestas massa. Donec dapibus rhoncus risus nec tincidunt. Suspendisse condimentum ante sit amet odio consequat id suscipit ante tempus. Aenean purus leo, blandit a iaculis non, tristique ullamcorper ante.
+    </p>
+    <p>
+    Phasellus consectetur, ante nec pretium hendrerit, arcu nunc ullamcorper lectus, non pulvinar sapien nibh ac sem. Nullam dignissim erat sit amet sapien convallis ornare. In hac habitasse platea dictumst. Fusce et ante ut turpis condimentum dictum. Mauris elit justo, laoreet eget consectetur sed, suscipit ut augue. Phasellus id sollicitudin enim. Aenean et justo magna, in ultricies lectus. Nunc blandit quam rhoncus quam pretium tempor. Aenean nec fermentum nibh. Donec ornare magna nec leo tempus ac varius tortor hendrerit. Ut vel erat purus. Maecenas volutpat convallis est a sagittis.
+    </p>
+</div>
   
-		<div id="header">
-		   
-		   <h1>Big old logo</h1>
-		   
-		   <div id="navigation">
-		     <ul id="nav">
-		       <li id="mini-logo"><a href="#">LOGO</a></li>
-		       <li><a href="#">ABOUT</a></li>
-		       <li><a href="#">PROJECTS</a></li>
-		     </ul>
-		   </div>
-		   
-		   
-		</div>
-
-
-		<div id="page">
-	    	<h2>Page content</h2>
-	    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt nunc ac ante mollis sagittis. Sed molestie velit eget libero cursus pharetra. Etiam luctus euismod sem, a luctus sapien sagittis vitae. Fusce faucibus erat sit amet libero rhoncus non fringilla orci fermentum. Fusce sed justo vel quam mollis posuere nec ac tortor. Integer fringilla libero quis arcu tristique eu tempus diam iaculis. Phasellus est risus, viverra a blandit sit amet, mattis eget felis. In tincidunt accumsan tempor. Mauris non sem non diam hendrerit rutrum. Praesent non consectetur elit. Proin scelerisque malesuada sem, at ultrices risus aliquam id. Donec elementum lacus porta nulla fermentum at imperdiet neque varius. Praesent imperdiet viverra tortor, at pharetra neque convallis id. Proin dolor ante, vestibulum sed porta eget, suscipit nec enim. Duis rhoncus dolor eu sem scelerisque id rhoncus neque viverra. Fusce at ultricies lacus. Aliquam quam purus, dictum viverra luctus vitae, varius vel neque. Integer porta lectus sit amet diam molestie non vehicula magna convallis. Phasellus vitae sapien in nulla pharetra pellentesque. Nulla facilisi. Maecenas mollis accumsan nunc nec varius. Quisque gravida lacus ut ipsum lacinia ac tincidunt velit egestas. Integer facilisis facilisis convallis. Vivamus scelerisque vestibulum arcu eget porta. Mauris nec purus elit. Vestibulum iaculis venenatis venenatis. Phasellus ullamcorper, ligula ac scelerisque pretium, risus ante consectetur augue, a blandit sapien nunc eget dui. Praesent odio lectus, tristique id aliquam fermentum, elementum vel ante. Phasellus semper augue quis arcu suscipit vitae porta magna consectetur. Etiam mollis arcu eu mi sodales dictum. Donec sit amet volutpat eros. Cras enim tellus, volutpat at faucibus vel, eleifend ac augue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent facilisis elit sit amet nisi faucibus auctor. Ut vehicula posuere arcu, quis fermentum augue tincidunt scelerisque. Duis arcu ligula, ornare id ullamcorper at, feugiat ut lectus. Praesent imperdiet tristique ante, eget placerat turpis dictum quis. Etiam justo libero, pretium eu imperdiet sit amet, elementum a erat. Aenean mollis cursus convallis. Duis neque dolor, dapibus posuere cursus non, lacinia quis lorem. Aliquam egestas, ipsum nec pretium vulputate, diam enim euismod velit, in dapibus quam purus eu augue. Aliquam odio velit, cursus vitae vulputate id, pulvinar quis sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac lorem quis mi porttitor iaculis nec vel est. Vestibulum id nisl augue, id ultricies dui. Aliquam a ultrices leo. Integer at placerat turpis. Nam nibh neque, tincidunt id vestibulum eu, luctus vitae lorem. In in erat ante, at posuere diam. 
-			</p>
-		</div>
-
-	</body>
+</body>
 </html>
