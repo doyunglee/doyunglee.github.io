@@ -1,17 +1,19 @@
 body {
-   background-color: #333;  
-   color: #999;
+   background-color: #000000;  
    font: 12px/1.4em Arial,sans-serif;
 }
+
 #wrap {
    margin: 10px auto;        
    background: #666;
    padding: 10px;
    width: 700px;
 }
+
+/*header before the navbar*/
 #header {
-   background-color: #666;
-   color: #FFF;
+   background-color: #F5D76E;
+   color: #FFF; /*text font color*/
 }
 #logo {
    font-size: 30px;  
@@ -21,10 +23,12 @@ body {
 #navWrap {
    height: 30px;
 }
+/* the actual navigation bar*/
 #nav {
    padding: 5px;
-   background: #999;    
+   background: #F7CA18;    
 }
+
 #nav ul {
    margin: 0;
    padding: 0;    
