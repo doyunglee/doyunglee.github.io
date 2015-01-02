@@ -7,23 +7,23 @@ title: Doyung Lee, Cat Patrol
 		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 		<meta charset=utf-8 />
 		<title>Title Here </title>
+		<script>
+			$(function() { alert('hello') });
+			var navPos = $('#nav').offset().top;
 
+			$(window).scroll(function(){
+
+			  var fixIT = $(this).scrollTop() >= navPos;
+			  var setPos = fixIT ? 'fixed' : 'relative' ;
+			  var logoSH = fixIT ? 'show' : 'hide' ;
+			 
+			  $('#nav').css({position: setPos});
+			  $('#mini-logo')[logoSH](300);
+
+			});
+		</script>
 	</head>
-	<script>
-		$(function() { alert('hello') });
-		var navPos = $('#nav').offset().top;
 
-		$(window).scroll(function(){
-
-		  var fixIT = $(this).scrollTop() >= navPos;
-		  var setPos = fixIT ? 'fixed' : 'relative' ;
-		  var logoSH = fixIT ? 'show' : 'hide' ;
-		 
-		  $('#nav').css({position: setPos});
-		  $('#mini-logo')[logoSH](300);
-
-		});
-	</script>
 	<body>
   
   
