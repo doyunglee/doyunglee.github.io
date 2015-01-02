@@ -1,3 +1,7 @@
+---
+layout: default
+title: Doyung Lee, Cat Patrol
+---
 <html>
 	<head>
 		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
@@ -5,15 +9,17 @@
 		<title>Title Here </title>
 		<script>
 			var navPos = $('#nav').offset().top;
+
 			$(window).scroll(function(){
+			  alert('hello')
 			  var fixIT = $(this).scrollTop() >= navPos;
 			  var setPos = fixIT ? 'fixed' : 'relative' ;
 			  var logoSH = fixIT ? 'show' : 'hide' ;
 			 
 			  $('#nav').css({position: setPos});
 			  $('#mini-logo')[logoSH](300);
+
 			});
-			$(function() { alert('hello') });
 		</script>
 	</head>
 
