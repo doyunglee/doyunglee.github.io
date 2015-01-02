@@ -4,12 +4,13 @@ body {
    font: 12px/1.4em Arial,sans-serif;
 }
 
-/*This wraps the header, body and big logo*/
+/*This wraps the body and big logo*/
 #wrap {
    margin: 0px auto;        
    background: #FFFFFF;
    padding: 10px;
    width: 700px;
+   z-index: -1;
 }
 
 /*header before the navbar. Should be a huge image.*/
@@ -30,6 +31,7 @@ body {
    padding: 20px;
    background: #F7CA18; 
    left: 0px;
+   right: 0px;
    width: 100%; 
    z-index: 1;  
 }
@@ -41,9 +43,9 @@ body {
 #nav li {
    float: left;
    padding: 3px 8px;
-   background-color: #FFF;
+   background-color: #F7CA18;
    margin: 0 10px 0 0;
-   color: #F00;
+   color: #FFFFFF;
    list-style-type: none;
 }
 #nav li a {
