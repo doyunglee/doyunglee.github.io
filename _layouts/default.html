@@ -2,56 +2,8 @@
 	<html>
 		<head>
 			<title>{{ page.title }}</title>
-			<meta http-equiv="content-type" content="text/html; charset=UTF-8">  
-			<!-- Include jQuery -->
-			<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
-
 			<!-- link to main stylesheet -->
 			<link rel="stylesheet" type="text/css" href="/css/main.css">
-			<script type='text/javascript'>
-				$(function() {
-				    // Stick the #nav to the top of the window
-				    var nav = $('#nav');
-				    var navHomeY = nav.offset().top;
-				    var isFixed = false;
-				    var $w = $(window);
-				    $w.scroll(function() {
-				        var scrollTop = $w.scrollTop();
-				        var shouldBeFixed = scrollTop > navHomeY;
-				        if (shouldBeFixed && !isFixed) {
-				            nav.css({
-				                position: 'fixed',
-				                top: 0,
-				                left: nav.offset().left,
-				                width: nav.width()
-				            });
-				            isFixed = true;
-				        }
-				        else if (!shouldBeFixed && isFixed)
-				        {
-				            nav.css({
-				                position: 'static'
-				            });
-				            isFixed = false;
-				        }
-				    });
-				});  
-			</script>
-
-
-			<div id="header">
-		        <div id="navWrap">
-		            <div id="nav">
-		                <ul>
-		                    <li><a href="#" class="smoothScroll">Demo Link 1</a></li>
-		                    <li><a href="#" class="smoothScroll">Demo Link 2</a></li>
-		                    <li><a href="#" class="smoothScroll">Demo Link 3</a></li>
-		                    <li><a href="#" class="smoothScroll">Demo Link 4</a></li>
-		                </ul>    
-		                <br class="clearLeft" />
-		            </div>
-		        </div>
-		    </div>
 		</head>
 		<body>
 			
