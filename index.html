@@ -9,8 +9,9 @@ title: Doyung Lee, Cat Patrol
 		<meta charset=utf-8 />
 		<title>Title Here </title>
 		<script>
+			$(function(){ alert("begin!"); });
 			var navPos = $('#nav').offset().top;
-			$(function(){ alert("begin!");});
+
 			$(window).scroll(function(){
 			  alert("hello!");
 			  var fixIT = $(this).scrollTop() >= navPos;
