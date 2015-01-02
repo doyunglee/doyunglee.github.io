@@ -1,6 +1,6 @@
 /*full body of the site*/
 body {
-   background-color: #F5D76E;  
+   background-color: #FFFFFF;  
    font: 12px/1.4em Arial,sans-serif;
 }
 
@@ -28,7 +28,10 @@ body {
 /* the actual navigation bar*/
 #nav {
    padding: 20px;
-   background: #F7CA18;    
+   background: #F7CA18; 
+   left: 0px;
+   width: 100%; 
+   z-index: 1;  
 }
 
 #nav ul {
