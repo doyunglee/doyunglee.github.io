@@ -7,8 +7,7 @@ body {
 .jumbotron {
    padding: 30px 15px;
    margin-bottom: 30px;
-   color: inherit;
    /*background-color: rgba(255,0,0,0.5);*/
-   background: url("images/header_photo_fish.jpg") no-repeat center center fixed;
+   background: url("http://jasonlefkowitz.net/wp-content/uploads/2013/07/Cute-Cats-cats-33440930-1280-800.jpg");
 }
 
