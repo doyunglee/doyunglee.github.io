@@ -20,11 +20,9 @@ body {
 
 .hithere h1{
    font-family: "Futura Koyu";
-   font-size: 120px;
    letter-spacing: 5px;
    padding: 10px 0px;
    text-align: center;
-   top: 0; left: 0; bottom: 0; right: 0;
 }
 
 @font-face {
