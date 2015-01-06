@@ -8,9 +8,20 @@ body {
    padding: 30px 15px;
    margin-bottom: 30px;
    /*background-color: rgba(255,0,0,0.5);*/
-   background: url("http://jasonlefkowitz.net/wp-content/uploads/2013/07/Cute-Cats-cats-33440930-1280-800.jpg") no-repeat center center fixed; 
    background: linear-gradient(0deg, #4B088A 0%,#36648b 100%);
-   opacity: .3;
    width: 100%;
    height: 100%;
+
+}
+
+.jumbotron2 {
+   padding: 30px 15px;
+   margin-bottom: 30px;
+   background: url("http://jasonlefkowitz.net/wp-content/uploads/2013/07/Cute-Cats-cats-33440930-1280-800.jpg") no-repeat center center fixed; 
+   width: 100%;
+   height: 100%;
+   opacity: .3;
+   top: 0;
+   left: 0;
+   right: 0;
 }
