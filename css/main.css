@@ -1,3 +1,5 @@
+@import url('http://fonts.googleapis.com/css?family=Playfair+Display');
+
 /*full body of the site*/
 body {
    background-color: #FFFFFF;  
@@ -13,11 +15,18 @@ body {
    -o-background-size: cover;
    background-size: cover;
    padding: 0;
+   color: #FFFFFF;
+}
+
+.hithere {
+   font-family: "Playfair Display", Times, serif;
+   font-style: bold;
+   font-size: 40px;
 }
 
 .layer {
    padding: 30px 15px;
-   background-color: rgba(255, 193, 7, 0.35);
+   background-color: rgba(255, 193, 7, 0.50);
    top: 0;
    left: 0;
    width: 100%;
