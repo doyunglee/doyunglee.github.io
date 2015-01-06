@@ -22,12 +22,22 @@ body {
    font-family: "Futura Koyu";
    letter-spacing: 5px;
    padding: 10px 0px;
-   text-align: center;
+}
+
+.serif-talk p{
+   font-family: "LibreBaskerville";
+   letter-spacing: 0px;
+   font-size: 30px;
 }
 
 @font-face {
    font-family: "Futura Koyu";
    src: url("fonts/Futura-Koyu.ttf");
+}
+
+@font-face {
+   font-family: "Libre Baskerville";
+   src: url("fonts/LibreBaskerville-Regular.otf");
 }
 
 .layer {
