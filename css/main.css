@@ -4,4 +4,10 @@ body {
    font: 12px/1.4em Arial,sans-serif;
 }
 
+.jumbotron {
+   padding: 30px 15px;
+   margin-bottom: 30px;
+   color: inherit;
+   background-color: #eee;
+}
 
