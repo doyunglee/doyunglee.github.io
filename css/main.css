@@ -6,6 +6,11 @@ body {
    font: 12px/1.4em Arial,sans-serif;
 }
 
+.container {
+   width: 70%;
+}
+
+/* ------- Jumbotron Shenanigans --------------------------*/
 .jumbotron {
    background: url("images/header_photo_obx.jpg"); 
    background-position:center;
@@ -20,26 +25,6 @@ body {
    margin-bottom: 0px;
 }
 
-.hithere h1{
-   font-family: "Montserrat", sans-serif;
-   letter-spacing: 5px;
-   padding: 10px 0px;
-   font-size: 6.5vw;
-   margin-bottom: 0px;
-}
-
-.serif-talk h3{
-   font-family: "Libre Baskerville";
-   letter-spacing: 0px;
-   padding: 0px 0px;
-   font-size: 200%;
-   line-height: 125%;
-   background-color: rgba(0, 0, 0, 0.3);
-   box-shadow: 0 0 150px 100px rgba(0, 0, 0, 0.3);
-   margin-top: 0px;
-
-}
-
 .layer {
    padding-top: 270px;
    padding-bottom: 0px;
@@ -51,37 +36,107 @@ body {
    content: center;
 }
 
-.container {
-   height: 100%;
-   width: 70%;
-}
-
-.row {
- margin: 0 auto;
-}
-
-.col-xs-6 {
-   background-color: rgba(20, 20, 20, 1);
-   color: rgba(255, 255, 255, 1);
-   min-width: 200px;
-   min-height: 200px;
-
-}
-
-
-#survo {
-   background-color: rgba(20, 1, 1, 1);
-   text-align: center;   
-}
-
-.cell-title {
+.hithere h1{
    font-family: "Montserrat", sans-serif;
    letter-spacing: 5px;
    padding: 10px 0px;
+   font-size: 6.5vw;
    margin-bottom: 0px;
 }
+
+.hithere h3{
+   font-family: "Libre Baskerville";
+   letter-spacing: 0px;
+   padding: 0px 0px;
+   font-size: 200%;
+   line-height: 125%;
+   background-color: rgba(0, 0, 0, 0.3);
+   box-shadow: 0 0 150px 100px rgba(0, 0, 0, 0.3);
+   margin-top: 0px;
+
+}
+
+/* ------- Sections -------------------------------------*/
+
+.section-container {
+   width: 70%;
+   padding-top: 100px;
+   padding-bottom: 50px;
+   margin: 0 auto;
+}
+
+.section-container h1 {
+   font-family: "Montserrat";
+   letter-spacing: 0px;
+   font-size: 400%;
+}
+
+.section-container h3 {
+   font-family: "Libre Baskerville Italic";
+   margin-top: 0px;
+   color: rgba(150, 150, 150, 1);
+}
+
+
+
+/* ------- Squares Shenanigans --------------------------*/
+.col-xs-6 {
+   background-color: rgba(20, 20, 20, 1);
+   color: rgba(255, 255, 255, 1);
+   min-height: 250px;
+}
+
+.cell-title h4{
+   font-family: "Montserrat", sans-serif;
+   letter-spacing: 2px;
+   padding: 10px;
+   margin-bottom: 0px;
+}
+
+.cell-title p{
+   font-family: "Libre Baskerville", sans-serif;
+   padding: 20px;
+   line-height: 20px;
+   margin-bottom: 0px;
+}
+
+/* Collection of Work Squares */
+#survo {
+   background-color: rgba(74, 20, 140, 1);
+   text-align: center;   }
+#insper {
+   background-color: rgba(183, 28, 28, 1);
+   text-align: center;   }
+#mimo {
+   background-color: rgba(0, 191, 165, 1);
+   text-align: center;   }
+#extrahour {
+   background-color: rgba(0, 145, 235, 1);
+   text-align: center;   }
+#eDisco {
+   background-color: rgba(0, 200, 83, 1);
+   text-align: center;   }
+#sigsys {
+   background-color: rgba(255, 214, 0, 1);
+   text-align: center;}
+
+
+/* ------- Footer Shenanigans --------------------------*/
+.footer {
+   background-color: rgba(170, 170, 170, 1);
+   color: #ccc;
+   padding: 50px;
+}
+
+
+/* ------- Fonts! --------------------------------------*/
 
 @font-face {
    font-family: "Libre Baskerville";
    src: url("fonts/LibreBaskerville-Regular.otf");
+}
+
+@font-face {
+   font-family: "Libre Baskerville Italic";
+   src: url("fonts/LibreBaskerville-Italic.otf");
 }
