@@ -25,20 +25,24 @@ body {
    letter-spacing: 5px;
    padding: 10px 0px;
    font-size: 6.5vw;
+   margin-bottom: 0px;
 }
 
 .serif-talk h3{
    font-family: "Libre Baskerville";
    letter-spacing: 0px;
-   padding: 0px 2px;
+   padding: 0px 0px;
    font-size: 200%;
    line-height: 125%;
    background-color: rgba(0, 0, 0, 0.3);
    box-shadow: 0 0 150px 100px rgba(0, 0, 0, 0.3);
+   margin-top: 0px;
+
 }
 
 .layer {
-   padding-top: 250px;
+   padding-top: 270px;
+   padding-bottom: 0px;
    background-color: rgba(0, 0, 0, 0.5);
    top: 0;
    left: 0;
@@ -50,6 +54,31 @@ body {
 .container {
    height: 100%;
    width: 70%;
+}
+
+.row {
+ margin: 0 auto;
+}
+
+.col-xs-6 {
+   background-color: rgba(20, 20, 20, 1);
+   color: rgba(255, 255, 255, 1);
+   min-width: 200px;
+   min-height: 200px;
+
+}
+
+
+#survo {
+   background-color: rgba(20, 1, 1, 1);
+   text-align: center;   
+}
+
+.cell-title {
+   font-family: "Montserrat", sans-serif;
+   letter-spacing: 5px;
+   padding: 10px 0px;
+   margin-bottom: 0px;
 }
 
 @font-face {
