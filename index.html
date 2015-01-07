@@ -17,6 +17,16 @@
 
     <!-- JQuery for navbar movement -->
     <script type = 'text/javascript'>
+		var bg = jQuery(".jumbotron");
+		jQuery(window).resize("resizeBackground");
+		function resizeBackground() {
+		    bg.height(jQuery(window).height());
+		}
+		resizeBackground();
+
+		function resizeBackground() {
+		    bg.height(jQuery(window).height() + 60);
+		}		
     </script>
   </head>
 
