@@ -20,13 +20,9 @@
 		var bg = jQuery(".jumbotron");
 		jQuery(window).resize("resizeBackground");
 		function resizeBackground() {
-		    bg.height(jQuery(window).height());
+		    bg.height(jQuery(window).height() + 60);
 		}
 		resizeBackground();
-
-		function resizeBackground() {
-		    bg.height(jQuery(window).height() + 60);
-		}		
     </script>
   </head>
 
