@@ -15,8 +15,10 @@ body {
    background: url("images/header_photo_obx.jpg"); 
    background-position:center;
    background-repeat: no-repeat;
-   background-size: 100%;
-   height: 100vh;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
    padding: 0;
    color: #ffffff;
    text-align: center;
@@ -132,6 +134,12 @@ body {
 
 
 /* ------- Fonts! --------------------------------------*/
+
+@media all and (max-width: 800px) {
+.hithere h3{
+    font-size: 17px;
+  }
+}
 
 @font-face {
    font-family: "Libre Baskerville";
