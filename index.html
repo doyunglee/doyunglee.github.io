@@ -8,21 +8,37 @@
     <link rel="icon" href="../../favicon.ico">
 
     <title>Doyung Lee</title>
-	<!-- Include jQuery -->
+<!-- Include jQuery -->
   	<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
-    <!-- Bootstrap core CSS -->
+<!-- Bootstrap core CSS -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- My CSS -->
+<!-- My CSS -->
     <link href="css/main.css" type="text/css" rel="stylesheet">
 
-    <!-- JQuery for navbar movement -->
+<!-- JQuery -->
     <script type = 'text/javascript'>
+		$(document).ready(function(){
+			var origtitle = $('.cell-title h4').css('font-size');
+			var newtitle = parseInt(origtitle) + 5;
+			var origblurb = $('.cell-title h5').css('font-size');
+			var newblurb = parseInt(origblurb) + 2;
+			$("#survo").hover(function(){
+				$("#survo .layer").css("background-color", "rgba(74, 20, 140, 0.8)");
+				$("#survo .cell-title h4").animate({fontSize: newtitle}, 70);
+				$("#survo .cell-title h5").animate({fontSize: newblurb}, 70);
+			},
+			function() {
+				$("#survo .layer").css("background-color", "rgba(74, 20, 140, 0.2)");
+				$("#survo .cell-title h4").animate({fontSize: origtitle}, 0);
+				$("#survo .cell-title h5").animate({fontSize: origblurb}, 0);
+			});
+		});
     </script>
   </head>
 
 
   <body>
-	  	<!-- jumbotron for the first image -->
+<!-- jumbotron for the first image -->
 	    <div class="jumbotron">
 	    	<div class = "layer">
 	    		<div class = "containercenter">
@@ -35,7 +51,7 @@
 	 		</div>
 	    </div>
 
-	    <!-- Sassy Section Title: About-->
+<!-- Sassy Section Title: About-->
 	   	<div class = "section-container">
 	   		<h1>THE STORY SO FAR...</h1>
 	   		<h3>(a little bit about me)</h3>
@@ -44,68 +60,74 @@
 
 	   	</div>
 
-	    <!-- Sassy Section Title: Work -->
+<!-- Sassy Section Title: Work -->
 	   	<div class = "section-container">
 	   		<h1>SELECTED WORKS</h1>
 	   		<h3>(handpicked fresh from the farm)</h3>
 	   	</div>
 
-	    <!-- This one is the grid with all the squares -->
+
+
+<!-- This one is the grid with all the squares -->
 	    <div class = "container">
 			<div class="row">
 				<div class="col-xs-6 col-sm-3" id="survo">
-					<div class="cell-title">
-						<h4>SURVO</h4>
-						<p>Web app</p>
+					<div class = "layer">
+						<div class="cell-title">
+							<h4>SURVO</h4>
+							<h5>Web app to measure student motivation.</h5>
+						</div>
 					</div>
 				</div>
 				<div class="col-xs-6 col-sm-3" id="insper">
 					<div class="cell-title">
 							<h4>INSPER</h4>
-							<p>Helped launch a new engineering college in Sao Paulo.</p>
+							<h5>Building a College in Sao Paulo.</h5>
 					</div>
 				</div>
 				<div class="col-xs-6 col-sm-3" id = "mimo">
 					<div class="cell-title">
 						<h4>MIMOBABY</h4>
-						<p>Major feature updates for Android app.</p>
+						<h5>Android app for babies and their parents.</h5>
 					</div>
 				</div>
 				<div class="col-xs-6 col-sm-3" id = "extrahour">
 					<div class="cell-title">
 						<h4>EXTRAHOUR</h4>
-						<p>Android app that helps you track how you spend your time everyday.</p>
+						<h5>Android app that'll help you stop procrastinating.</h5>
 					</div>
 				</div>
 				<div class="col-xs-6 col-sm-3" id = "eDisco">
 					<div class="cell-title">
 						<h4>EDISCO</h4>
-						<p>Teaching students K-12 and designing fun, engaging curriculum.</p>
+						<h5>Curriculum design for K-12 and launching rockets.</h5>
 					</div>
 				</div>
 				<div class="col-xs-6 col-sm-3" id = "sigsys">
 					<div class="cell-title">
 						<h4>SIGNALS</h4>
 						<h4 span style="padding-top: 0px; margin-top: 0px">& SYSTEMS</h4>
-						<p>Created a video explaining something.</p>
+						<h5>A short film explaining an AM modem.</h5>
 					</div>
 				</div>
 			</div>	  	    
 	    </div>
 
-	   	<!-- Sassy Section Title: Space-->
+
+
+<!-- Sassy Section Title: Space-->
 	   	<div class = "section-container">
 	   	</div>
 
-	   	<!-- Footer -->
+<!-- Footer -->
 	   	<footer class="footer">
       		<div class="container">
       		</div>
     	</footer>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   </body>
