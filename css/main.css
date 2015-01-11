@@ -113,26 +113,61 @@ body {
    background-position:center;
    background-repeat: no-repeat;
    text-align: center;
-   display: flex;
-      }
+   display: flex;}
 #insper {
    background-color: rgba(183, 28, 28, 1);
    text-align: center;   }
 #mimo {
-   background-color: rgba(0, 191, 165, 1);
-   text-align: center;   }
+   background-image: url("images/mimobaby_square_small.png");
+   background-position:center;
+   background-repeat: no-repeat;
+   text-align: center;
+   display: flex;}
 #extrahour {
    background-color: rgba(0, 145, 235, 1);
    text-align: center;   }
 #eDisco {
-   background-color: rgba(0, 200, 83, 1);
-   text-align: center;   }
+   background-image: url("images/edisco_square_small.png");
+   background-position:center;
+   background-repeat: no-repeat;
+   text-align: center;
+   display: flex;}
 #sigsys {
-   background-color: rgba(255, 214, 0, 1);
-   text-align: center;}
+   background-image: url("images/sigsys_square_small.png");
+   background-position:center;
+   background-repeat: no-repeat;
+   text-align: center;
+   display: flex;}
 
 #survo .layer {
    background-color: rgba(74, 20, 140, 0.2);
+   transition: background 0.15s linear;
+   width: 100%;
+   height: auto;
+   text-align: center; 
+   display: inline-block;
+}
+
+#mimo .layer {
+   background-color: rgba(0, 191, 165, 0.45);   
+   transition: background 0.15s linear;
+   width: 100%;
+   height: auto;
+   text-align: center; 
+   display: inline-block;
+}
+
+#sigsys .layer {
+   background-color: rgba(255, 214, 0, 0.45);
+   transition: background 0.15s linear;
+   width: 100%;
+   height: auto;
+   text-align: center; 
+   display: inline-block;
+}
+
+#eDisco .layer {
+   background-color: rgba(0, 200, 83, 0.45);
    transition: background 0.15s linear;
    width: 100%;
    height: auto;

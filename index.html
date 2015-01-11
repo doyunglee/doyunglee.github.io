@@ -26,11 +26,37 @@
 				$("#survo .layer").css("background-color", "rgba(74, 20, 140, 0.8)");
 				$("#survo .cell-title h4").animate({fontSize: newtitle}, 70);
 				$("#survo .cell-title h5").animate({fontSize: newblurb}, 70);
-			},
-			function() {
+			}, function() {
 				$("#survo .layer").css("background-color", "rgba(74, 20, 140, 0.2)");
 				$("#survo .cell-title h4").animate({fontSize: origtitle}, 0);
 				$("#survo .cell-title h5").animate({fontSize: origblurb}, 0);
+			});
+			$("#mimo").hover(function(){
+				$("#mimo .layer").css("background-color", "rgba(0, 191, 165, 0.85)");
+				$("#mimo .cell-title h4").animate({fontSize: newtitle}, 70);
+				$("#mimo .cell-title h5").animate({fontSize: newblurb}, 70);
+			}, function() {
+				$("#mimo .layer").css("background-color", "rgba(0, 191, 165, 0.45)");
+				$("#mimo .cell-title h4").animate({fontSize: origtitle}, 0);
+				$("#mimo .cell-title h5").animate({fontSize: origblurb}, 0);
+			});
+			$("#sigsys").hover(function(){
+				$("#sigsys .layer").css("background-color", "rgba(255, 214, 0, 0.85");
+				$("#sigsys .cell-title h4").animate({fontSize: newtitle}, 70);
+				$("#sigsys .cell-title h5").animate({fontSize: newblurb}, 70);
+			}, function() {
+				$("#sigsys .layer").css("background-color", "rgba(255, 214, 0, 0.45)");
+				$("#sigsys .cell-title h4").animate({fontSize: origtitle}, 0);
+				$("#sigsys .cell-title h5").animate({fontSize: origblurb}, 0);
+			});
+			$("#eDisco").hover(function(){
+				$("#eDisco .layer").css("background-color", "rgba(0, 200, 83, 0.85)");
+				$("#eDisco .cell-title h4").animate({fontSize: newtitle}, 70);
+				$("#eDisco .cell-title h5").animate({fontSize: newblurb}, 70);
+			}, function() {
+				$("#eDisco .layer").css("background-color", "rgba(0, 200, 83, 0.45)");
+				$("#eDisco .cell-title h4").animate({fontSize: origtitle}, 0);
+				$("#eDisco .cell-title h5").animate({fontSize: origblurb}, 0);
 			});
 		});
     </script>
@@ -86,28 +112,36 @@
 					</div>
 				</div>
 				<div class="col-xs-6 col-sm-3" id = "mimo">
-					<div class="cell-title">
-						<h4>MIMOBABY</h4>
-						<h5>Android app for babies and their parents.</h5>
+					<div class = "layer">
+						<div class="cell-title">
+							<h4>MIMOBABY</h4>
+							<h5>Android app for babies and their parents.</h5>
+						</div>
 					</div>
 				</div>
+
 				<div class="col-xs-6 col-sm-3" id = "extrahour">
 					<div class="cell-title">
-						<h4>EXTRAHOUR</h4>
+						<h4>EXTRA</h4>
+						<h4 span style="padding-top: 0px; margin-top: 0px">HOURS</h4>
 						<h5>Android app to make you more efficient.</h5>
 					</div>
 				</div>
 				<div class="col-xs-6 col-sm-3" id = "eDisco">
-					<div class="cell-title">
-						<h4>EDISCO</h4>
-						<h5>Curriculum design for K-12 and launching rockets.</h5>
+					<div class="layer">
+						<div class="cell-title">
+							<h4>EDISCO</h4>
+							<h5>Curriculum design for K-12 and launching rockets.</h5>
+						</div>
 					</div>
 				</div>
 				<div class="col-xs-6 col-sm-3" id = "sigsys">
-					<div class="cell-title">
-						<h4>SIGNALS</h4>
-						<h4 span style="padding-top: 0px; margin-top: 0px">& SYSTEMS</h4>
-						<h5>A short film explaining an AM modem.</h5>
+					<div class="layer">
+						<div class="cell-title">
+							<h4>SIGNALS</h4>
+							<h4 span style="padding-top: 0px; margin-top: 0px">& SYSTEMS</h4>
+							<h5>A short film explaining an AM modem.</h5>
+						</div>
 					</div>
 				</div>
 			</div>	  	    
