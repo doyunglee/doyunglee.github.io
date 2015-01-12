@@ -1,4 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:700);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400);
+
 
 /*full body of the site*/
 body {
@@ -45,6 +47,7 @@ body {
 
 .hithere h1{
    font-family: "Montserrat", sans-serif;
+   font-weight: 700;
    letter-spacing: 5px;
    padding: 10px 0px;
    font-size: 6.5vw;
@@ -71,6 +74,7 @@ body {
 
 .section-container h1 {
    font-family: "Montserrat";
+   font-weight: 700;
    letter-spacing: 0px;
    font-size: 400%;
 }
@@ -81,7 +85,16 @@ body {
    color: rgba(150, 150, 150, 1);
 }
 
+/* ------- Misc. -------------------------------------*/
 
+.aboutme {
+   font-family: "Montserrat";
+}
+
+a:link    {color: rgba(13, 71, 161, 0.8); background-color:transparent; text-decoration:none}
+a:visited {color: rgba(13, 71, 161, 0.8); background-color:transparent; text-decoration:none}
+a:hover   {color: rgba(13, 71, 161, 1); background-color:transparent; text-decoration:none}
+a:active  {color: rgba(13, 71, 161, 1); background-color:transparent; text-decoration:none}
 
 /* ------- Squares Shenanigans --------------------------*/
 .col-xs-6 {
@@ -93,6 +106,7 @@ body {
 
 .cell-title h4{
    font-family: "Montserrat", sans-serif;
+   font-weight: 700;
    letter-spacing: 1px;
    padding-top: 10px;
    margin-bottom: 0px;
