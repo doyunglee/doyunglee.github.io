@@ -69,7 +69,7 @@
 			    	scroll_start = $(this).scrollTop();
 			    	if(scroll_start + 70> offset.top) {
 			        	$(".navbar-fixed-top").css('background-color', '#ffffff');
-			        	$(".navbar-default .navbar-nav>li>a").css('color', '#000000');
+			        	$(".navbar-default .navbar-nav>li>a").css('color', '#333333');
 			       	} else {
 			        	$(".navbar-fixed-top").css('background-color', 'transparent');
 			        	$(".navbar-default .navbar-nav>li>a").css('color', '#ffffff');
@@ -83,7 +83,6 @@
 			    }, 500);
 			    return false;
 			});
-			$('#startchange').waypoint();
 		});
     </script>
   </head>
