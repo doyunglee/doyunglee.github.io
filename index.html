@@ -75,12 +75,12 @@
 				});
 		    }
 		    //Smooth scrolling to different sections of the website	    
-			$('.navbar-default .navbar-nav>li>a').click(function(){
+			$('a').click(function(){
 			    $('html, body').animate({
 			        scrollTop: $( $(this).attr('href') ).offset().top
 			    }, 500);
 			    return false;
-			});	
+			});				
 		});
     </script>
   </head>
@@ -91,7 +91,7 @@
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container" span style="width: 100%">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#">DL</a>
+          <a class="navbar-brand" href="#home">DL</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -104,7 +104,7 @@
     </nav>
 
 <!-- jumbotron for the first image -->
-	    <div class="jumbotron">
+	    <div class="jumbotron" id="home">
 	    	<div class = "layer">
 	    		<div class = "containercenter">
 			    		<span class = "hithere">
@@ -114,7 +114,6 @@
 			    </div>		
 	 		</div>
 	    </div>
-
 
 
 <!-- Sassy Section Title: About-->
@@ -127,6 +126,7 @@
 	   		<div class = "aboutme">
 	   			<ul span style="list-style-type: none;">
 	   				<li>
+	   					<div id="log"></div>
 	   					<h3><span style="color: rgba(100, 100, 100, 1);"> Name: </span><span style = "font-weight: 700;">Doyung Lee</span> <span style="font-family: Libre Baskerville Italic; color: rgba(150, 150, 150, 1);"> (pronounced dough - young)</h3>
 	   				</li>
 	   				<li>
