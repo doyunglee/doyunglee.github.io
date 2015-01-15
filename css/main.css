@@ -4,13 +4,14 @@
 
 /*full body of the site*/
 body {
-   background-color: #FFFFFF;  
+   background-color: #F3F3F3;  
    font: 12px/1.4em Arial,sans-serif;
 }
 
 .container {
    width: 70%;
 }
+
 
 /* ------- Jumbotron Shenanigans --------------------------*/
 .jumbotron {
@@ -74,6 +75,7 @@ body {
 
 .section-container h1 {
    font-family: "Montserrat";
+   color: #333333;
    font-weight: 700;
    letter-spacing: 0px;
    font-size: 400%;
@@ -95,6 +97,85 @@ a:link    {color: rgba(13, 71, 161, 0.8); background-color:transparent; text-dec
 a:visited {color: rgba(13, 71, 161, 0.8); background-color:transparent; text-decoration:none}
 a:hover   {color: rgba(13, 71, 161, 1); background-color:transparent; text-decoration:none}
 a:active  {color: rgba(13, 71, 161, 1); background-color:transparent; text-decoration:none}
+
+/*-------- Navbar Shenanigans ---------------------------*/
+
+.navbar {
+   margin-bottom: -50px;
+   border: none;
+   color: #ffffff;
+   font-family: "Montserrat";
+   font-weight: 700;
+   background-color: transparent;
+   height: 70px;
+}
+
+.navbar-default .navbar-brand {
+   color: #ffffff;
+   background-color: #37474F;
+   height: 70px;
+   width: 70px;
+   padding: 25px 20px;
+}
+.navbar-default .navbar-brand:link{
+   color: #ffffff;
+   background-color: #37474F;
+} 
+.navbar-default .navbar-brand:hover{
+   color: #ffffff;
+   background-color: #37474F;
+}
+
+.navbar-default .navbar-brand:active{
+   color: #ffffff;
+   background-color: #37474F;
+}
+
+.navbar-default .navbar-brand:visited{
+   color: #ffffff;
+   background-color: #37474F;
+}
+
+/*---- Intro nav button ----*/
+.navbar-default .navbar-nav>li.intro a{
+   color: #ffffff;
+   height: 70px;
+   padding: 25px;
+}
+
+.navbar-default .navbar-nav>li.intro a:hover{
+   background-color: #EFE359;
+   height: 70px;
+   padding: 25px;
+}
+
+/*---- Work nav button ----*/
+.navbar-default .navbar-nav>li.work a{
+   color: #ffffff;
+   height: 70px;
+   padding: 25px;
+}
+
+.navbar-default .navbar-nav>li.work a:hover{
+   background-color: #EC407A;
+   height: 70px;
+   padding: 25px;
+}
+
+
+/*---- Contact nav button ----*/
+.navbar-default .navbar-nav>li.contact a{
+   color: #ffffff;
+   height: 70px;
+   padding: 25px;
+}
+
+.navbar-default .navbar-nav>li.contact a:hover{
+   background-color: #2099B9;
+   height: 70px;
+   padding: 25px;
+}
+
 
 /* ------- Squares Shenanigans --------------------------*/
 .col-xs-6 {

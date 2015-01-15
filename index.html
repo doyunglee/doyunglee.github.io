@@ -9,7 +9,7 @@
 
     <title>Doyung Lee</title>
 <!-- Include jQuery -->
-  	<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+  	<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script>
 <!-- Bootstrap core CSS -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 <!-- My CSS -->
@@ -58,11 +58,51 @@
 				$("#eDisco .cell-title h4").animate({fontSize: origtitle}, 0);
 				$("#eDisco .cell-title h5").animate({fontSize: origblurb}, 0);
 			});
+			//This is for the navbar:
+			var scroll_start = 0;
+			var startchange = $('#startchange');
+			var offset = startchange.offset();
+		    if (startchange.length){
+			   	$(document).scroll(function() { 
+			    	scroll_start = $(this).scrollTop();
+			    	if(scroll_start + 5> offset.top) {
+			        	$(".navbar-fixed-top").css('background-color', '#ffffff');
+			        	$(".navbar-default .navbar-nav>li>a").css('color', '#000000');
+			       	} else {
+			        	$(".navbar-fixed-top").css('background-color', 'transparent');
+			        	$(".navbar-default .navbar-nav>li>a").css('color', '#ffffff');
+			       	}
+				});
+		    }
+		    //Smooth scrolling to different sections of the website	    
+			$('.navbar-default .navbar-nav>li>a').click(function(){
+			    $('html, body').animate({
+			        scrollTop: $( $(this).attr('href') ).offset().top
+			    }, 500);
+			    return false;
+			});	
 		});
     </script>
   </head>
 
   <body>
+
+<!-- navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container" span style="width: 100%">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">DL</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class = "intro"><a href="#startchange">INTRO</a></li>
+            <li class = "work"><a href="#startwork">WORK</a></li>
+            <li class = "contact"><a href="#" id="contact">CONTACT</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
 <!-- jumbotron for the first image -->
 	    <div class="jumbotron">
 	    	<div class = "layer">
@@ -75,8 +115,10 @@
 	 		</div>
 	    </div>
 
+
+
 <!-- Sassy Section Title: About-->
-	   	<div class = "section-container">
+	   	<div class = "section-container" id="startchange">
 	   		<h1>THE STORY SO FAR...</h1>
 	   		<h3>(a little bit about me)</h3>
 	   	</div>
@@ -98,7 +140,7 @@
 	   	</div>
 
 <!-- Sassy Section Title: Work -->
-	   	<div class = "section-container">
+	   	<div class = "section-container" id="startwork">
 	   		<h1>SELECTED WORKS</h1>
 	   		<h3>(handpicked fresh from the farm)</h3>
 	   	</div>
