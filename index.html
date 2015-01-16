@@ -9,9 +9,10 @@
 
     <title>Doyung Lee</title>
 <!-- Include jQuery -->
-  	<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script>
+  	<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
 <!-- Waypoint API -->
 	<script src="bower_components/waypoints/lib/noframework.waypoints.min.js"></script>
+	<script src="bower_components/waypoints/lib/shortcuts/inview.min.js"></script>
 <!-- Bootstrap core CSS -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 <!-- My CSS -->
@@ -83,10 +84,55 @@
 			    }, 500);
 			    return false;
 			});
+			var introwaypoint = new Waypoint.Inview({
+			  element: document.getElementById('aboutme'),
+			  enter: function(direction) {
+			    $('.navbar-default .navbar-nav>li.intro>a').css('background-color', '#FFDB00');
+			  },
+			  entered: function(direction) {
+			    $('.navbar-default .navbar-nav>li.intro>a').css('background-color', '#FFDB00');
+			  },
+			  exit: function(direction) {
+			  	$('.navbar-default .navbar-nav>li.intro>a').css('background-color', '');
+			  },
+			  exited: function(direction) {
+    			$('.navbar-default .navbar-nav>li.intro>a').css('background-color', '');
+  			  }
+			})
+			var workwaypoint = new Waypoint.Inview({
+			  element: document.getElementById('workhere'),
+			  enter: function(direction) {
+			    $('.navbar-default .navbar-nav>li.work>a').css('background-color', '#EC0096');
+			  },
+			  entered: function(direction) {
+			    $('.navbar-default .navbar-nav>li.work>a').css('background-color', '#EC0096');
+			  },
+			  exit: function(direction) {
+			  	$('.navbar-default .navbar-nav>li.work>a').css('background-color', '');
+			  },
+			  exited: function(direction) {
+    			$('.navbar-default .navbar-nav>li.work>a').css('background-color', '');
+  			  }
+			})	
+			var contactwaypoint = new Waypoint.Inview({
+			  element: document.getElementById('contactme'),
+			  enter: function(direction) {
+			    $('.navbar-default .navbar-nav>li.contact>a').css('background-color', '#00B0B9');
+			  }, offset: 100,
+			  entered: function(direction) {
+			    $('.navbar-default .navbar-nav>li.contact>a').css('background-color', '#00B0B9');
+			  },
+			  exit: function(direction) {
+			  	$('.navbar-default .navbar-nav>li.contact>a').css('background-color', '');
+			  },
+			  exited: function(direction) {
+    			$('.navbar-default .navbar-nav>li.contact>a').css('background-color', '');
+  			  }
+			}) 
 		});
     </script>
   </head>
-
+<!-- **************** END HEAD *********************** -->
   <body>
 <!-- navbar -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -124,7 +170,7 @@
 	   	</div>
 
 	   	<div class="container">
-	   		<div class = "aboutme">
+	   		<div class = "aboutme" id="aboutme">
 	   			<ul span style="list-style-type: none;">
 	   				<li>
 	   					<div id="log"></div>
@@ -152,7 +198,7 @@
 
 
 <!-- This one is the grid with all the squares -->
-	    <div class = "container">
+	    <div class = "container" id="workhere">
 			<div class="row">
 				<div class="col-xs-6 col-sm-3" id="survo">
 					<div class = "layer">
@@ -211,7 +257,7 @@
 	   	</div>
 
 	   	<div class="container">
-	   		<div class = "aboutme">
+	   		<div class = "aboutme" id="contactme">
 	   			<ul span style="list-style-type: none;">
 	   				<li>
 	   					<div id="log"></div>
@@ -240,8 +286,6 @@
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   </body>
 </html>
