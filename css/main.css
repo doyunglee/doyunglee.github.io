@@ -180,7 +180,8 @@ a:active  {color: rgba(13, 71, 161, 1); background-color:transparent; text-decor
 .col-xs-6 {
    background-color: rgba(20, 20, 20, 1);
    color: rgba(255, 255, 255, 1);
-   min-height: 500px;
+   min-height: 400px;
+   min-width: 400px;
    padding: 0px;
 }
 
