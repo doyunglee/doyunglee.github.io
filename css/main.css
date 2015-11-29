@@ -253,7 +253,7 @@ a:active  {color: rgba(13, 71, 161, 1); background-color:transparent; text-decor
 
 /* ------- Footer Shenanigans --------------------------*/
 .footer {
-   background-color: rgba(170, 170, 170, 1);
+   background-color: rgba(255, 255, 255, 1);
    color: #ccc;
    padding: 50px;
 }
