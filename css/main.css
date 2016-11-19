@@ -1,263 +1,303 @@
-@import url(http://fonts.googleapis.com/css?family=Montserrat:700);
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400);
-
 
 /*full body of the site*/
 body {
-   background-color: #FFFFFF;  
-   font: 12px/1.4em Arial,sans-serif;
+  background-color: #DBDBDB;  
+  font: 12px/1.4em Roboto,sans-serif;
 }
 
-.container {
-   width: 70%;
+.section-header {
+  font-size: 24px;
+  font-family: Roboto;
+  letter-spacing: 2px;
+  font-weight: bolder;
+  color: #444444;
+  margin-bottom: 0px;
+}
+
+.section-me {
+  font-size: 16px;
+  font-family: Roboto;
+  letter-spacing: 2px;
+  font-style: italic;
+  color: #2EED00;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.section-text {
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 1px;
+  font-weight: lighter;
+  color: #555555;
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
+
+.body-wrapper {
+  width: 100%;
+  padding-left: 8%;
+  padding-right: 8%;
+  margin: 0 auto;
+  background-color: #FFFFFF;  
+}
+
+.width-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  height: 100%;
+  background-color: #FFFFFF;
+}
+
+.caption {
+  font-size: 14px;
+  margin: 0 auto;
+  width: 95%;
+  color: #888888;
+  font-weight: lighter;
+  font-style: italic;
+  padding-bottom: 25px;
+}
+
+.majorkey {
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: #444444;
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
+
+/*------- Head Photo + Text Shenanigans --------------------------*/
+
+.header-photo {
+  width: 100%;
+  position: relative;
+}
+
+.header-text {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 28px;
+  position: absolute;
+  top: 50px;
+  margin-left: 15px;
+  line-height: 150%
+}
+
+.header-detail {
+  font-family: Roboto;
+  font-style: italic;
+  font-size: 18px;
+  position: absolute;
+  color: #FFFFFF;
+  top: 36px;
+  margin-left: 15px;
+}
+
+.header-text-span {
+  background-color: #FFFFFF;
+  padding: 10px;
+}
+
+.header-detail-span {
+  background-color: #FD5964;
+  padding: 10px;
+}
+
+span.spacer {
+  padding: 0 5px;
+}
+
+#wrapper {
+  padding: 40px;
+}
+
+#sidebar-wrapper {
+  width: 160px;
+}
+
+#main-page {
+  padding-top: 100px;
+}
+
+#bigvideo { 
+  position: relative;
+  padding: 0;
+  display: block;
+  margin: 0 auto;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+#topbutton1 {
+  font: 16px/1.4em Arial,sans-serif;
+  font-weight: bold;
+  position: absolute;
+  background-color: #FFFFFF;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  top: 25px;
+  left: 20px;
+}
+
+#topbutton2 {
+  font: 16px/1.4em Arial,sans-serif,bold;
+  font-weight: bold;
+  position: absolute;
+  background-color: #FFFFFF;
+  padding: 10px; 
+  padding-left: 20px;
+  padding-right: 20px;
+  top: 25px;
+  left: 160px;
+}
+
+/*------- infobar Shenanigans --------------------------*/
+#infobar {
+  height: 50px;
+  background-color: #000000;
+}
+
+
+/*-------- Sidebar Shenanigans --------------------------*/
+
+.sidebar-nav {
+  list-style-image: none;
+  list-style-type: none;
+  -webkit-padding-start: 0px;
+  font-family: "Arial";
+  color: #333333;
+}
+
+.sidebar-list {
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+.sidebar-list-links {
+  padding-top: 0px;
+  padding-bottom: 10px;
+}
+
+#name-title {
+  font-family: "Arial";
+  font-weight: 700;
 }
 
 /*-------- Navbar Shenanigans ---------------------------*/
 
 .navbar {
-   margin-bottom: -50px;
-   border: none;
-   color: #ffffff;
-   font-family: "Montserrat";
-   font-weight: 700;
-   background-color: transparent;
-   height: 70px;
+  margin-bottom: -50px;
+  border: none;
+  color: #ffffff;
+  font-family: "Arial";
+  font-weight: 700;
+  background-color: transparent;
+  height: 70px;
 }
 
 .navbar-default .navbar-brand {
-   color: #ffffff;
-   background-color: #37474F;
-   height: 70px;
-   width: 70px;
-   padding: 25px 20px;
+  color: #ffffff;
+  background-color: #37474F;
+  height: 70px;
+  width: 70px;
+  padding: 25px 20px;
 }
 .navbar-default .navbar-brand:link{
-   color: #ffffff;
-   background-color: #37474F;
+  color: #ffffff;
+  background-color: #37474F;
 } 
 .navbar-default .navbar-brand:hover{
-   color: #ffffff;
-   background-color: #37474F;
+  color: #ffffff;
+  background-color: #37474F;
 }
 
 .navbar-default .navbar-brand:active{
-   color: #ffffff;
-   background-color: #37474F;
+  color: #ffffff;
+  background-color: #37474F;
 }
 
 .navbar-default .navbar-brand:visited{
-   color: #ffffff;
-   background-color: #37474F;
+  color: #ffffff;
+  background-color: #37474F;
 }
 
 /*---- Intro nav button ----*/
 .navbar-default .navbar-nav>li.intro a{
-   color: #ffffff;
-   height: 70px;
-   padding: 25px;
+  color: #ffffff;
+  height: 70px;
+  padding: 25px;
 }
 
 .navbar-default .navbar-nav>li.intro a:hover{
-   background-color: #FFDB00;
-   height: 70px;
-   padding: 25px;
+  background-color: #FFDB00;
+  height: 70px;
+  padding: 25px;
 }
 
 /*---- Work nav button ----*/
 .navbar-default .navbar-nav>li.work a{
-   color: #ffffff;
-   height: 70px;
-   padding: 25px;
+  color: #ffffff;
+  height: 70px;
+  padding: 25px;
 }
 
 .navbar-default .navbar-nav>li.work a:hover{
-   background-color: #EC0096;
-   height: 70px;
-   padding: 25px;
+  background-color: #EC0096;
+  height: 70px;
+  padding: 25px;
 }
 
 
 /*---- Contact nav button ----*/
 .navbar-default .navbar-nav>li.contact a{
-   color: #ffffff;
-   height: 70px;
-   padding: 25px;
+  color: #ffffff;
+  height: 70px;
+  padding: 25px;
 }
 
 .navbar-default .navbar-nav>li.contact a:hover{
-   background-color: #00B0B9;
-   height: 70px;
-   padding: 25px;
-}
-
-/* ------- Jumbotron Shenanigans --------------------------*/
-.jumbotron {
-   background: url("images/header_photo_obx.jpg"); 
-   background-position:center;
-   background-repeat: no-repeat;
-   -webkit-background-size: cover;
-   -moz-background-size: cover;
-   -o-background-size: cover;
-   background-size: cover;
-   padding: 0;
-   color: #ffffff;
-   text-align: center;
-   margin-bottom: 0px;
-}
-
-.containercenter {
-   display: table-cell; /*child of layer*/
-   vertical-align: middle;
-   margin-left: 25%;
-   margin-right: 25%;
-}
-
-.layer {
-   padding-bottom: 0px;
-   background-color: rgba(0, 0, 0, 0.5);
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   display: table; /* parent of containercenter*/
-}
-
-
-.hithere h1{
-   font-family: "Montserrat", sans-serif;
-   font-weight: 700;
-   letter-spacing: 5px;
-   padding: 10px 0px;
-   font-size: 6.5vw;
-   margin-bottom: 0px;
-}
-
-.hithere h3{
-   font-family: "Libre Baskerville";
-   letter-spacing: 0px;
-   padding: 0px 12%;
-   font-size: 200%;
-   line-height: 125%;
-   margin-top: 0px;
+  background-color: #00B0B9;
+  height: 70px;
+  padding: 25px;
 }
 
 /* ------- Sections -------------------------------------*/
 
 .section-container {
-   width: 70%;
-   padding-top: 100px;
-   padding-bottom: 50px;
-   margin: 0 auto;
+  width: 70%;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  margin: 0 auto;
 }
 
 .section-container h1 {
-   font-family: "Montserrat";
-   color: #333333;
-   font-weight: 700;
-   letter-spacing: 0px;
-   font-size: 400%;
+  font-family: "Arial";
+  color: #333333;
+  font-weight: 700;
+  letter-spacing: 0px;
+  font-size: 400%;
 }
 
 .section-container h3 {
-   font-family: "Libre Baskerville Italic";
-   margin-top: 0px;
-   color: rgba(150, 150, 150, 1);
+  font-family: "Libre Baskerville Italic";
+  margin-top: 0px;
+  color: rgba(150, 150, 150, 1);
 }
 
 /* ------- Misc. -------------------------------------*/
 
 .aboutme {
-   font-family: "Montserrat";
+  font-family: "Arial";
 }
 
-a:link    {color: rgba(13, 71, 161, 0.8); background-color:transparent; text-decoration:none}
-a:visited {color: rgba(13, 71, 161, 0.8); background-color:transparent; text-decoration:none}
-a:hover   {color: rgba(13, 71, 161, 1); background-color:transparent; text-decoration:none}
-a:active  {color: rgba(13, 71, 161, 1); background-color:transparent; text-decoration:none}
-
-
-/* ------- Squares Shenanigans --------------------------*/
-.col-xs-6 {
-   background-color: rgba(20, 20, 20, 1);
-   color: rgba(255, 255, 255, 1);
-   min-height: 400px;
-   min-width: 400px;
-   padding: 0px;
-}
-
-.cell-title h4{
-   font-family: "Montserrat", sans-serif;
-   font-weight: 700;
-   letter-spacing: 1px;
-   padding-top: 10px;
-   margin-bottom: 0px;
-   margin-top: 30%;
-}
-
-.cell-title h5{
-   font-family: "Libre Baskerville", sans-serif;
-   padding: 10px;
-   line-height: 20px;
-   margin-bottom: 0px;
-   margin-top: 8px;
-}
-
-/* Collection of Work Squares */
-#survo {
-   background-image: url("images/survo_square_small.png");
-   background-position:center;
-   background-repeat: no-repeat;
-   text-align: center;
-   display: flex;}
-#insper {
-   background-color: rgba(183, 28, 28, 1);
-   text-align: center;   }
-#medialab {
-   background-image: url("images/edisco_square_small.png");
-   background-position:center;
-   background-repeat: no-repeat;
-   text-align: center;
-   display: flex;}
-#uocd {
-   background-image: url("images/sigsys_square_small.png");
-   background-position:center;
-   background-repeat: no-repeat;
-   text-align: center;
-   display: flex;}
-
-#survo .layer {
-   background-color: rgba(74, 20, 140, 0.2);
-   transition: background 0.15s linear;
-   width: 100%;
-   height: auto;
-   text-align: center; 
-   display: inline-block;
-}
-
-#uocd .layer {
-   background-color: rgba(255, 214, 0, 0.45);
-   transition: background 0.15s linear;
-   width: 100%;
-   height: auto;
-   text-align: center; 
-   display: inline-block;
-}
-
-#medialab .layer {
-   background-color: rgba(0, 200, 83, 0.45);
-   transition: background 0.15s linear;
-   width: 100%;
-   height: auto;
-   text-align: center; 
-   display: inline-block;
-}
-
-/* ------- Footer Shenanigans --------------------------*/
-.footer {
-   background-color: rgba(255, 255, 255, 1);
-   color: #ccc;
-   padding: 50px;
-}
+a:link    {color: rgba(0, 0, 0, 0.8); background-color:transparent; text-decoration:none}
+a:visited {color: rgba(0, 0, 0, 0.8); background-color:transparent; text-decoration:none}
+a:hover   {color: rgba(252, 230, 30, 1); background-color:transparent; text-decoration:none}
+a:active  {color: rgba(252, 208, 30, 1); background-color:transparent; text-decoration:none}
 
 
 /* ------- Fonts and Windows --------------------------------------*/
