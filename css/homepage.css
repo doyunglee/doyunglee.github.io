@@ -5,10 +5,9 @@ body {
   font: 12px/1.4em Roboto,sans-serif;
 }
 
-#title-text {
+#title-top-text {
   letter-spacing: 7px;
   font-size: 75px;
-  font-family: Roboto;
   font-weight: bolder;
   width: 200px;
   top: -10px;
@@ -37,13 +36,6 @@ body {
 .side-photo {
   height: 100%;
   position: relative;
-}
-
-.vert-photo {
-  height: 20%;
-  position: absolute;
-  top: -11px;
-  margin-left: 300px;
 }
 
 .goodies {
