@@ -5,33 +5,16 @@ body {
   font: 12px/1.4em Roboto,sans-serif;
 }
 
-.section-header {
-  font-size: 24px;
+#title-text {
+  letter-spacing: 7px;
+  font-size: 75px;
   font-family: Roboto;
-  letter-spacing: 2px;
   font-weight: bolder;
-  color: #444444;
-  margin-bottom: 0px;
-}
-
-.section-me {
-  font-size: 16px;
-  font-family: Roboto;
-  letter-spacing: 2px;
-  font-style: italic;
-  color: #2EED00;
-  margin-top: 5px;
-  margin-bottom: 0px;
-}
-
-.section-text {
-  font-size: 16px;
-  line-height: 150%;
-  letter-spacing: 1px;
-  font-weight: lighter;
-  color: #555555;
-  padding-bottom: 5px;
-  padding-top: 10px;
+  width: 200px;
+  top: -10px;
+  margin-left: 250px;
+  position: absolute;
+  line-height: 92%;
 }
 
 .body-wrapper {
@@ -56,9 +39,16 @@ body {
   position: relative;
 }
 
+.vert-photo {
+  height: 20%;
+  position: absolute;
+  top: -11px;
+  margin-left: 300px;
+}
+
 .goodies {
   position: absolute;
-  top: 50px;
+  top:150px;
   margin-left: 300px;
 }
 
@@ -172,33 +162,6 @@ span.spacer {
 
 .navbar-default .navbar-nav>li.intro a:hover{
   background-color: #FFDB00;
-  height: 70px;
-  padding: 25px;
-}
-
-/*---- Work nav button ----*/
-.navbar-default .navbar-nav>li.work a{
-  color: #ffffff;
-  height: 70px;
-  padding: 25px;
-}
-
-.navbar-default .navbar-nav>li.work a:hover{
-  background-color: #EC0096;
-  height: 70px;
-  padding: 25px;
-}
-
-
-/*---- Contact nav button ----*/
-.navbar-default .navbar-nav>li.contact a{
-  color: #ffffff;
-  height: 70px;
-  padding: 25px;
-}
-
-.navbar-default .navbar-nav>li.contact a:hover{
-  background-color: #00B0B9;
   height: 70px;
   padding: 25px;
 }
