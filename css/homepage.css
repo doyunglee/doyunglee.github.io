@@ -49,53 +49,18 @@ body {
   background-color: #FFFFFF;
 }
 
-.caption {
-  font-size: 14px;
-  margin: 0 auto;
-  width: 95%;
-  color: #888888;
-  font-weight: lighter;
-  font-style: italic;
-  padding-bottom: 25px;
-}
-
-.majorkey {
-  font-size: 16px;
-  line-height: 130%;
-  letter-spacing: 1px;
-  font-weight: bold;
-  color: #444444;
-  padding-bottom: 5px;
-  padding-top: 10px;
-}
-
 /*------- Head Photo + Text Shenanigans --------------------------*/
 
-.header-photo {
-  width: 100%;
+.side-photo {
+  height: 100%;
   position: relative;
 }
 
-.header-text {
-  font-family: Roboto;
-  font-weight: bold;
-  font-size: 28px;
+.goodies {
   position: absolute;
   top: 50px;
-  margin-left: 15px;
-  line-height: 150%
+  margin-left: 300px;
 }
-
-.header-detail {
-  font-family: Roboto;
-  font-style: italic;
-  font-size: 18px;
-  position: absolute;
-  color: #FFFFFF;
-  top: 36px;
-  margin-left: 15px;
-}
-
 
 .header-text-span {
   background-color: #FFFFFF;
@@ -104,14 +69,6 @@ body {
 
 .header-detail-span {
   padding: 10px;
-}
-
-#clarksdale {
-  background-color: #FD5964;
-}
-
-#athenahealth {
-  background-color: #579FFF;
 }
 
 span.spacer {
@@ -139,60 +96,33 @@ span.spacer {
   max-width: 100%;
 }
 
-#topbutton1 {
-  font: 16px/1.4em Arial,sans-serif;
-  font-weight: bold;
-  position: absolute;
-  background-color: #FFFFFF;
-  padding: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  top: 25px;
-  left: 20px;
-}
-
-#topbutton2 {
-  font: 16px/1.4em Arial,sans-serif,bold;
-  font-weight: bold;
-  position: absolute;
-  background-color: #FFFFFF;
-  padding: 10px; 
-  padding-left: 20px;
-  padding-right: 20px;
-  top: 25px;
-  left: 160px;
-}
-
-/*------- infobar Shenanigans --------------------------*/
-#infobar {
-  height: 50px;
-  background-color: #000000;
-}
-
-
 /*-------- Sidebar Shenanigans --------------------------*/
 
 .sidebar-nav {
   list-style-image: none;
   list-style-type: none;
   -webkit-padding-start: 0px;
-  font-family: "Arial";
   color: #333333;
+  display: inline-block;
 }
 
 .sidebar-list {
-  padding-top: 10px;
-  font-weight: bold;
+  margin-top: 20px;
+  font-size: 20px;
+  letter-spacing: 5px;
+  color: #262626;
+  font-family: 'Droid Sans Mono', monospace;
 }
 
 .sidebar-list-links {
   padding-top: 0px;
   padding-bottom: 10px;
+  display: inline-block;
 }
 
-#name-title {
-  font-family: "Arial";
-  font-weight: 700;
+.image-button {
+  height: 125px;
+  padding-right: 25px;
 }
 
 /*-------- Navbar Shenanigans ---------------------------*/
@@ -290,42 +220,10 @@ span.spacer {
   font-size: 400%;
 }
 
-.section-container h3 {
-  font-family: "Libre Baskerville Italic";
-  margin-top: 0px;
-  color: rgba(150, 150, 150, 1);
-}
-
 /* ------- Misc. -------------------------------------*/
-
-.aboutme {
-  font-family: "Arial";
-}
 
 a:link    {color: rgba(0, 0, 0, 0.8); background-color:transparent; text-decoration:none}
 a:visited {color: rgba(0, 0, 0, 0.8); background-color:transparent; text-decoration:none}
 a:hover   {color: rgba(252, 230, 30, 1); background-color:transparent; text-decoration:none}
 a:active  {color: rgba(252, 208, 30, 1); background-color:transparent; text-decoration:none}
 
-
-/* ------- Fonts and Windows --------------------------------------*/
-
-@media all and (max-width: 900px) {
-   .hithere h3 {
-      font-size: 17px;
-   }
-
-   .cell-title h4 {
-      font-size: 18px;
-   }
-}
-
-@font-face {
-   font-family: "Libre Baskerville";
-   src: url("fonts/LibreBaskerville-Regular.otf");
-}
-
-@font-face {
-   font-family: "Libre Baskerville Italic";
-   src: url("fonts/LibreBaskerville-Italic.otf");
-}
