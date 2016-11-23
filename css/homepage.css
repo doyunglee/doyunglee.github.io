@@ -2,12 +2,13 @@
 /*full body of the site*/
 body {
   background-color: #FFFFFF;  
-  font: 12px/1.4em Roboto,sans-serif;
+  font: 12px/1.4em 'Roboto',sans-serif;
 }
 
 #title-top-text {
   letter-spacing: 7px;
   font-size: 75px;
+  font-family: 'Roboto';
   font-weight: bolder;
   width: 200px;
   top: -10px;
@@ -109,16 +110,6 @@ span.spacer {
 
 /*-------- Navbar Shenanigans ---------------------------*/
 
-.navbar {
-  margin-bottom: -50px;
-  border: none;
-  color: #ffffff;
-  font-family: "Arial";
-  font-weight: 700;
-  background-color: transparent;
-  height: 70px;
-}
-
 .navbar-default .navbar-brand {
   color: #ffffff;
   background-color: #37474F;
@@ -144,41 +135,3 @@ span.spacer {
   color: #ffffff;
   background-color: #37474F;
 }
-
-/*---- Intro nav button ----*/
-.navbar-default .navbar-nav>li.intro a{
-  color: #ffffff;
-  height: 70px;
-  padding: 25px;
-}
-
-.navbar-default .navbar-nav>li.intro a:hover{
-  background-color: #FFDB00;
-  height: 70px;
-  padding: 25px;
-}
-
-/* ------- Sections -------------------------------------*/
-
-.section-container {
-  width: 70%;
-  padding-top: 100px;
-  padding-bottom: 50px;
-  margin: 0 auto;
-}
-
-.section-container h1 {
-  font-family: "Arial";
-  color: #333333;
-  font-weight: 700;
-  letter-spacing: 0px;
-  font-size: 400%;
-}
-
-/* ------- Misc. -------------------------------------*/
-
-a:link    {color: rgba(0, 0, 0, 0.8); background-color:transparent; text-decoration:none}
-a:visited {color: rgba(0, 0, 0, 0.8); background-color:transparent; text-decoration:none}
-a:hover   {color: rgba(252, 230, 30, 1); background-color:transparent; text-decoration:none}
-a:active  {color: rgba(252, 208, 30, 1); background-color:transparent; text-decoration:none}
-
