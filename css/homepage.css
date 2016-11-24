@@ -92,7 +92,7 @@ span.spacer {
   margin-top: 20px;
   font-size: 20px;
   letter-spacing: 5px;
-  color: #262626;
+  color: #000000;
   font-family: 'Droid Sans Mono', monospace;
 }
 
@@ -105,6 +105,15 @@ span.spacer {
 .image-button {
   height: 125px;
   padding-right: 25px;
+}
+
+.image-button-small {
+  height: 100px;
+  padding-right: 25px;
+}
+
+.image-button-video {
+  height: 125px;
 }
 
 /*-------- Navbar Shenanigans ---------------------------*/
