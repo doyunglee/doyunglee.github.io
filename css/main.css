@@ -14,6 +14,16 @@ body {
   margin-bottom: 0px;
 }
 
+.section-header-videos {
+  font-size: 24px;
+  font-family: Roboto;
+  letter-spacing: 2px;
+  font-weight: bolder;
+  font-style: italic;
+  color: #444444;
+  margin-bottom: 0px;
+}
+
 .section-me {
   font-size: 16px;
   font-family: Roboto;
@@ -52,8 +62,9 @@ body {
 .caption {
   font-size: 14px;
   margin: 0 auto;
-  width: 95%;
+  width: 98%;
   color: #888888;
+  text-align: center;
   font-weight: lighter;
   font-style: italic;
   padding-bottom: 25px;
@@ -74,6 +85,12 @@ body {
 .header-photo {
   width: 100%;
   position: relative;
+}
+
+.investigating-photo{
+  margin: 0 auto;
+  display: block;
+  width:80%;
 }
 
 .header-text {
@@ -141,6 +158,12 @@ span.spacer {
   margin: 0 auto;
   max-height: 100%;
   max-width: 100%;
+}
+
+.video-layout {
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 /*-------- Navbar Shenanigans ---------------------------*/
