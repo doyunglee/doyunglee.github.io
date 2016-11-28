@@ -34,14 +34,14 @@ body {
 /*------- Head Photo + Text Shenanigans --------------------------*/
 
 .side-photo {
-  height: 100%;
+  height: 700px;
   position: relative;
 }
 
 .goodies {
   position: absolute;
   top:150px;
-  margin-left: 300px;
+  margin-left: 24%;
 }
 
 .header-text-span {
