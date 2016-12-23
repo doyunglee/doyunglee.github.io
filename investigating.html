@@ -19,34 +19,66 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:bolder" rel="stylesheet">
   </head>
 <!-- **************** END HEAD *********************** -->
+   <script>
+    function openSection(sectionName) {
+       var i, x;
+       x = document.getElementsByClassName("section");
+       for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none"; 
+       }
+    document.getElementById(sectionName).style.display = "block";
+    }
+    $(function() {
+      $('.list-button').on('click', function(){
+        $('.list-button').removeClass('selected');
+        $(this).addClass('selected');
+      }); 
+    });
+  </script>
   <div class="header-wrapper">
     <img src="images/anti-self.gif" class="header-photo" id="investigating-gif">
-    <p class="header-detail"><span class="header-detail-span" id="investigating">Doyung asks himself:</span></p>
+    <p class="header-detail"><span class="header-detail-span" id="investigating">Art</span></p>
 
     <h1 class="header-text" >
       <span class="header-text-span">
-       \How do I better understand myself?<span class='spacer'></span><br /><span class='spacer'></span>\How do I better express myself to other people?<span class='spacer'></span><br /><span class='spacer'></span>\How do I better understand other people?
-      </span>
+       Investigating Normal and<span class='spacer'></span><br /><span class='spacer'></span>Other Self Exploratory Projects
     </h1>
   </div>
-  <div class="body-wrapper">
-      <p class="section-text">
-      <br/>
-      These are a series of personal projects that I have been working on. Currently I am exploring the idea of understanding and empathy; me better understanding myself, me better understanding other people, other people better understanding me, and me better understanding the world. These projects range from purely performative to fully functional.
-      </p>
-    <h2 class="section-header">Social and Emotional Assistive Technology</h2>
-      <p class="section-text">
-      I ask myself how I can better express my emotions with my face. I have been known to have a resting angry face, which has led to many misunderstandings during conversations. I created this piece as a way to think about how one might design assistive technologies that may help us socially and emotionally. This helmet/mask explicitly points to what emotion the wearer is feeling, so there can be no confusion between the wearer and the person they are interacting with.
-      </p>
-      <img src="images/emotionmask.jpg" class="header-photo">
-      <br/>
-      <br/>
-    <h2 class="section-header">Tangibly Connecting to People in a Digitally Connected World (Ongoing)</h2>
-      <p class="section-text">
-      How can I feel more connected to the people I care about in a tangible way? I prototyped this backpack that has rolls of string attached to it; each roll of string is attached to one of my friends. In the coming weeks, my friends and I will try to go about our days attached to one another. Everytime I look at one of the strings, I will know that it is connected to one of my friends. 
-      </p>
-      <img src="images/backpack.jpg" class="header-photo">
-      <br/>
-      <br/>
-      <br/>
+  <div class="row">
+    <div class="col-md-3">
+      <ul class="sections">
+        <li><a class="list-button selected" href="javascript:void(0)" onclick="openSection('Overview')">Overview</a></li>
+        <li><a class="list-button" href="javascript:void(0)" onclick="openSection('SEAT')">SEAT</a></li>
+        <li><a class="list-button" href="javascript:void(0)" onclick="openSection('tangible connections')">Tangible Connections</a></li>
+      </ul>
+    </div>
+    <div class="col-md-9">
+      <div class="body-wrapper">
+          <div id="Overview" class="section">
+          <h2 class="section-header">How do I better Understand myself? How do I better express myself to other people? How do I better understand other people?</h2>
+            <p class="section-text">
+            These are a series of personal projects that I have been working on. Currently I am exploring the idea of understanding and empathy; me better understanding myself, me better understanding other people, other people better understanding me, and me better understanding the world. These projects range from purely performative to fully functional.
+            </p>
+          </div>
+          <div id="SEAT" class="section" style="display:none">
+            <h2 class="section-header">Social and Emotional Assistive Technology</h2>
+              <p class="section-text">
+              I ask myself how I can better express my emotions with my face. I have been known to have a resting angry face, which has led to many misunderstandings during conversations. I created this piece as a way to think about how one might design assistive technologies that may help us socially and emotionally. This helmet/mask explicitly points to what emotion the wearer is feeling, so there can be no confusion between the wearer and the person they are interacting with.
+              </p>
+              <img src="images/emotionmask.jpg" class="header-photo">
+              <br/>
+              <br/>
+          </div>
+          <div id="tangible connections" class="section" style="display:none">
+            <h2 class="section-header">Tangibly Connecting to People in a Digitally Connected World (Ongoing)</h2>
+              <p class="section-text">
+              How can I feel more connected to the people I care about in a tangible way? I prototyped this backpack that has rolls of string attached to it; each roll of string is attached to one of my friends. In the coming weeks, my friends and I will try to go about our days attached to one another. Everytime I look at one of the strings, I will know that it is connected to one of my friends. 
+              </p>
+              <img src="images/backpack.jpg" class="header-photo">
+              <br/>
+              <br/>
+              <br/>
+          </div>
+      </div>
+    </div>
   </div>

@@ -19,75 +19,112 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:bolder" rel="stylesheet">
   </head>
 <!-- **************** END HEAD *********************** -->
+  <script>
+    function openSection(sectionName) {
+       var i, x;
+       x = document.getElementsByClassName("section");
+       for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none"; 
+       }
+    document.getElementById(sectionName).style.display = "block";
+    }
+    $(function() {
+      $('.list-button').on('click', function(){
+        $('.list-button').removeClass('selected');
+        $(this).addClass('selected');
+      }); 
+    });
+  </script>
   <div class="header-wrapper">
     <img src="images/clarksdalehead.jpg" class="header-photo">
-    <p class="header-detail"><span class="header-detail-span" id="clarksdale">Coahoma County, Mississippi asks:</span></p>
+    <p class="header-detail"><span class="header-detail-span" id="clarksdale">Design</span></p>
 
     <h1 class="header-text" >
       <span class="header-text-span">
-       What are the tools Coahoma County youth need to<span class='spacer'></span><br /><span class='spacer'></span>prepare themselves for the future?
+       Community Development in<span class='spacer'></span><br /><span class='spacer'></span>Coahoma County, Mississippi
       </span>
     </h1>
   </div>
-  <div class="body-wrapper">
-      <p class="section-text">
-      <br/>
-      For a year, <b>I was a UX + graphic designer, project manager, and curriculum developer</b> in a team working with Coahoma community members and organizations; these groups are addressing challenges in providing the youth of Coahoma with the necessary resources to be successful. Below are some of the design works I did to help the team understand and get feedback from the community.
-      </p>
-    <h2 class="section-header">Co-Designing with Youth</h2>
-      <p class="section-text">
-      We co-designed with youth in Coahoma County to learn more about available and missing learning resources in their community. I helped design an activty (shown below) that allowed the students to imagine a new learning space, which helped us begin conversations about their needs and values.
-      </p>
-      <img src="images/codesign-students.jpg" class="header-photo">
-      <p class="caption">Left: Youth from an afterschool program ideating a mobile bus that teaches arts, technology and making. Right: Samples of ideated spaces made by high schoolers. 
-      </p>
+  <div class="row">
+    <div class="col-md-3">
+      <ul class="sections">
+        <li><a class="list-button selected" href="javascript:void(0)" onclick="openSection('Overview')">Overview</a></li>
+        <li><a class="list-button" href="javascript:void(0)" onclick="openSection('Co-Design')">Co-Design with Youth</a></li>
+        <li><a class="list-button" href="javascript:void(0)" onclick="openSection('Community Meeting')">Community Meetings</a></li>
+        <li><a class="list-button" href="javascript:void(0)" onclick="openSection('Testing Assumptions')">Testing Assumptions</a></li>
+        <li><a class="list-button" href="javascript:void(0)" onclick="openSection('Local Government')">Proposal to Local Govt.</a></li>
+      </ul>
+    </div>
+    <div class="col-md-9">
+      <div class="body-wrapper">
+        <div id="Overview" class="section">
+          <h2 class="section-header">What are the tools Coahoma County youth need to prepare themselves for the future?</h2>
+          <p class="section-text">
+          For a year, <b>I was a UX + graphic designer, project manager, and curriculum developer</b> in a team working with Coahoma community members and organizations; these groups are addressing challenges in providing the youth of Coahoma with the necessary resources to be successful. Below are some of the design works I did to help the team understand and get feedback from the community.
+          </p>
+        </div>
 
-      <p class="section-text">
-      With this activity, we were able to get ideas and have conversations with over 100 Coahoma youth. This information helped us narrow down to 5 potential ideas for a learning space in Coahoma County. 
-      </p>
-      <p class="majorkey">
-      KEY TAKEAWAYS: Coahoma youth are very much interested in music, entrepreneurship and the arts. Many of the youth feel uncomfortable in the city, and want a safe, youth-centered space where they can study, learn and hang out.
-      </p><br/>
+        <div id="Co-Design" class="section" style="display:none">
+          <h2 class="section-header">Co-Designing with Youth</h2>
+          <p class="section-text">
+          We co-designed with youth in Coahoma County to learn more about available and missing learning resources in their community. I helped design an activty (shown below) that allowed the students to imagine a new learning space, which helped us begin conversations about their needs and values.
+          </p>
+          <img src="images/codesign-students.jpg" class="content-photo">
+          <p class="caption">Left: Youth from an afterschool program ideating a mobile bus that teaches arts, technology and making. Right: Samples of ideated spaces made by high schoolers. 
+          </p>
 
-    <h2 class="section-header">Community Meeting with Youth and Leaders</h2>
-      <p class="section-text">
-      After co-designs, we held meetings with community leaders, organizations, and youth. I designed posters for 5 potential learning spaces that were formed using the data from the co-design activity. The posters were set up around our meeting space and sent to schools in the area for more feedback from students. We ended up receiving feedback from over 400 students.
-      </p>
-      <img src="images/communityideas.jpg" class="header-photo">
-      <p class="caption">
-      Five posters I designed for the community feedback session. Posters include information about impact, requirements, and case studies of existing spaces.
-      </p>     
-      <img src="images/communitymeetingphotos.jpg" class="header-photo">
-      <p class="caption">
-      Photos from our meeting. Community members were able to give feedback on each idea, as well as show interest in becoming involved with executing the space.
-      </p>  
-      <p class="majorkey">
-      KEY TAKEAWAYS: A mobile space can serve people across socio-economic lines in the county. Existing organizations see the mobile space as an opportunity to reach people without transportation, people in smaller towns, or people who might not know about their programs.
-      </p><br/>
+          <p class="section-text">
+          With this activity, we were able to get ideas and have conversations with over 100 Coahoma youth. This information helped us narrow down to 5 potential ideas for a learning space in Coahoma County. 
+          </p>
+          <p class="majorkey">
+          KEY TAKEAWAYS: Coahoma youth are very much interested in music, entrepreneurship and the arts. Many of the youth feel uncomfortable in the city, and want a safe, youth-centered space where they can study, learn and hang out.
+          </p><br/>
+        </div>
 
-    <h2 class="section-header">Testing Assumptions and Running Activities</h2>
-      <p class="section-text">
-      Using the information from co-designs and community meetings, we designed activities to test with youth. We setup these activities at the Juke Joint Festival, a blues festival which brings thousands of Coahoma residents to the city. We also tested and iterated the activities at CCYO, a new youth center.
-      </p>
-      <img src="images/runningactivities.jpg" class="header-photo">
-      <p class="caption">
-      Youth testing art, technology and music related activities. Left: a community mural. Middle and Right: music+technology activity using the Makey Makey.
-      </p>  
-      <p class="majorkey">
-      KEY TAKEAWAYS: The activities were popular with younger groups and their parents. However, the team will have to rethink curriculum that will be better suited for the older youth (12+).
-      </p><br/>
-    <h2 class="section-header">Proposal to Local Government</h2>
-      <p class="section-text">
-      At the end of the year, I helped design a proposal for a mobile learning space. The proposal has been shared with potential organization partners, as well as local government officials.
-      </p>
-      <img src="images/proposal.jpg" class="header-photo">
-      <p class="caption">
-      Sample pages from the proposal. The proposal includes data from co-designs, financial plans, and potential curricula for the mobile learning space.
-      </p>  
-      <p class="section-text">
-      If you are interested in reading the whole proposal, or learning more about this project, you can reach me at leedoyung(at)gmail.com! The project is currently in its third year, and the team is focusing on curriculum design, funding, and measuring progress.
-      <br/>
-      <br/>
-      <br/>
-      </p>
+        <div id="Community Meeting" class="section" style="display:none">
+          <h2 class="section-header">Community Meeting with Youth and Leaders</h2>
+          <p class="section-text">
+          After co-designs, we held meetings with community leaders, organizations, and youth. I designed posters for 5 potential learning spaces that were formed using the data from the co-design activity. The posters were set up around our meeting space and sent to schools in the area for more feedback from students. We ended up receiving feedback from over 400 students.
+          </p>
+          <img src="images/communityideas.jpg" class="content-photo">
+          <p class="caption">
+          Five posters I designed for the community feedback session. Posters include information about impact, requirements, and case studies of existing spaces.
+          </p>     
+          <img src="images/communitymeetingphotos.jpg" class="content-photo">
+          <p class="caption">
+          Photos from our meeting. Community members were able to give feedback on each idea, as well as show interest in becoming involved with executing the space.
+          </p>  
+          <p class="majorkey">
+          KEY TAKEAWAYS: A mobile space can serve people across socio-economic lines in the county. Existing organizations see the mobile space as an opportunity to reach people without transportation, people in smaller towns, or people who might not know about their programs.
+          </p><br/>
+        </div>
+
+        <div id="Testing Assumptions" class="section" style="display:none">
+           <h2 class="section-header">Testing Assumptions and Running Activities</h2>
+            <p class="section-text">
+            Using the information from co-designs and community meetings, we designed activities to test with youth. We setup these activities at the Juke Joint Festival, a blues festival which brings thousands of Coahoma residents to the city. We also tested and iterated the activities at CCYO, a new youth center.
+            </p>
+            <img src="images/runningactivities.jpg" class="content-photo">
+            <p class="caption">
+            Youth testing art, technology and music related activities. Left: a community mural. Middle and Right: music+technology activity using the Makey Makey.
+            </p>  
+            <p class="majorkey">
+            KEY TAKEAWAYS: The activities were popular with younger groups and their parents. However, the team will have to rethink curriculum that will be better suited for the older youth (12+).
+            </p><br/>
+        </div>
+
+        <div id="Local Government" class="section" style="display:none">
+           <h2 class="section-header">Proposal to Local Government</h2>
+            <p class="section-text">
+            At the end of the year, I helped design a proposal for a mobile learning space. The proposal has been shared with potential organization partners, as well as local government officials.
+            </p>
+            <img src="images/proposal.jpg" class="content-photo">
+            <p class="caption">
+            Sample pages from the proposal. The proposal includes data from co-designs, financial plans, and potential curricula for the mobile learning space.
+            </p>  
+            <p class="section-text">
+            If you are interested in reading the whole proposal, or learning more about this project, you can reach me at leedoyung(at)gmail.com! The project is currently in its third year, and the team is focusing on curriculum design, funding, and measuring progress.
+        </div>
+      </div>
+    </div>
   </div>

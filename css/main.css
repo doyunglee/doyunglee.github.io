@@ -5,6 +5,11 @@ body {
   font: 12px/1.4em Roboto,sans-serif;
 }
 
+.row {
+  width: 100%;
+  padding-left: 10px;
+}
+
 .section-header {
   font-size: 24px;
   font-family: Roboto;
@@ -46,8 +51,9 @@ body {
 
 .body-wrapper {
   width: 100%;
-  padding-left: 20%;
   padding-right: 20%;
+  padding-left: 15px;
+  padding-top: 25px;
   margin: 0 auto;
   background-color: #FFFFFF;  
 }
@@ -80,12 +86,65 @@ body {
   padding-top: 10px;
 }
 
+.sections {
+  position: relative;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px;
+  margin-top: 25px;
+  line-height: 175%;
+  list-style-type: none;
+}
+
+.list-button {
+  color: #000000;
+  padding: 5px;
+  background-color: #ffffff;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.list-button:link{
+  text-decoration: none;
+  background-color: none;
+}
+
+.list-button:hover{
+  color: #ffffff;
+  background-color: #0FA6C5;
+  text-decoration: none;
+}
+
+.list-button:visited{
+  color: #ffffff;
+  background-color: #0FA6C5;
+  text-decoration: none;
+}
+
+.list-button:focus{
+  color:#ffffff;
+}
+
+.selected{
+  color: #ffffff;
+  background-color: #0FA6C5;
+  text-decoration: none;
+}
+
+
 /*------- Head Photo + Text Shenanigans --------------------------*/
 
 .header-photo {
   width: 100%;
+  min-height: 300px;
   position: relative;
 }
+
+.content-photo {
+  width: 100%;
+  position: relative;
+}
+
 
 .investigating-photo{
   margin: 0 auto;
@@ -115,7 +174,7 @@ body {
 
 
 .header-text-span {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding: 10px;
 }
 
@@ -124,11 +183,11 @@ body {
 }
 
 #clarksdale {
-  background-color: #00FBF1;
+  background-color: #0FA6C5;
 }
 
 #investigating {
-  background-color: #00FBF1;
+  background-color: #0FA6C5;
 }
 
 #investigating-gif {
@@ -147,10 +206,6 @@ span.spacer {
   width: 160px;
 }
 
-#main-page {
-  padding-top: 100px;
-}
-
 #bigvideo { 
   position: relative;
   padding: 0;
@@ -164,42 +219,4 @@ span.spacer {
   display: block;
   margin: 0 auto;
   padding: 20px;
-}
-
-/*-------- Navbar Shenanigans ---------------------------*/
-
-.navbar {
-  margin-bottom: -50px;
-  border: none;
-  color: #ffffff;
-  font-family: "Arial";
-  font-weight: 700;
-  background-color: transparent;
-  height: 70px;
-}
-
-.navbar-default .navbar-brand {
-  color: #ffffff;
-  background-color: #37474F;
-  height: 70px;
-  width: 70px;
-  padding: 25px 20px;
-}
-.navbar-default .navbar-brand:link{
-  color: #ffffff;
-  background-color: #37474F;
-} 
-.navbar-default .navbar-brand:hover{
-  color: #ffffff;
-  background-color: #37474F;
-}
-
-.navbar-default .navbar-brand:active{
-  color: #ffffff;
-  background-color: #37474F;
-}
-
-.navbar-default .navbar-brand:visited{
-  color: #ffffff;
-  background-color: #37474F;
 }
