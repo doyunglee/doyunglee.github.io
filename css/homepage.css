@@ -38,6 +38,12 @@ body {
   position: relative;
 }
 
+.side-photo:hover {
+  height: 700px;
+  position: relative;
+  background-image: url('meverticalglitch.png');
+}
+
 .goodies {
   position: absolute;
   top:150px;
