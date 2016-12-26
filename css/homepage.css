@@ -8,8 +8,8 @@ body {
   letter-spacing: 7px;
   font-size: 75px;
   font-family: 'Roboto';
+  width: 300px;
   font-weight: bolder;
-  width: 200px;
   top: -10px;
   margin-left: 250px;
   position: absolute;
@@ -38,15 +38,9 @@ body {
   position: relative;
 }
 
-.side-photo:hover {
-  height: 700px;
-  position: relative;
-  background-image: url('meverticalglitch.png');
-}
-
 .goodies {
   position: absolute;
-  top:150px;
+  top:160px;
   margin-left: 24%;
 }
 
@@ -55,12 +49,8 @@ body {
   padding: 10px;
 }
 
-.header-detail-span {
-  padding: 10px;
-}
-
 span.spacer {
-  padding: 0 5px;
+  padding: 0 3px;
 }
 
 #wrapper {
@@ -84,6 +74,7 @@ span.spacer {
   max-width: 100%;
 }
 
+
 /*-------- Sidebar Shenanigans --------------------------*/
 
 .sidebar-nav {
@@ -95,9 +86,9 @@ span.spacer {
 }
 
 .sidebar-list {
-  margin-top: 20px;
+  margin-top: 10px;
   font-size: 20px;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   color: #000000;
   font-family: 'Droid Sans Mono', monospace;
 }
@@ -110,7 +101,7 @@ span.spacer {
 
 .image-button {
   height: 125px;
-  padding-right: 25px;
+  padding-right:4px;
 }
 
 .image-button-small {
@@ -122,6 +113,106 @@ span.spacer {
   height: 125px;
 }
 
+.list-link-set {
+  width: 210px;
+  clear:both;
+}
+
+.list-link-image {
+  float: left;
+}
+
+.list-link-set:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.list-link-words{
+  font-weight: bolder;
+  font-family: 'Roboto';
+  font-size: 18px;
+  float:right;
+  width: 75px;
+  margin:0px;
+  color: #000000;
+  line-height: 125%;
+}
+
+.list-link-words p{
+  font-weight: lighter;
+  font-family: 'Roboto';
+  font-size: 14px;
+  float:right;
+  width: 75px;
+  margin-top:2px;
+  color: #000000;
+}
+
+
+/*-------- New Sidebar -----------------------*/
+
+.photo-grid {
+  margin: 1em auto;
+  padding-left: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.photo-grid li {
+  border: 0px;
+  display: inline-block;
+  margin: 1em;
+  width: 200px;
+}
+
+.photo-grid img {
+  display: block;
+  height: 100%;
+}
+
+.photo-grid figure {
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  width: 200px;
+}
+
+.photo-grid figcaption {
+  font-family: 'Roboto';
+  font-weight: bold;
+  color: black;
+  display: table;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  padding-left: 15px;
+}
+
+.photo-grid figcaption p {
+  display: table-cell;
+  font-size: 16px;
+  position: relative;
+  top: -40px;
+  width: 200px;
+  line-height: 125%;
+  vertical-align: middle;
+  letter-spacing: 2px;
+}
+
+.photo-grid li:hover figcaption {
+  opacity: 1;
+}
+
+.header-detail-span {
+  padding: 1px;
+  background-color: #ffffff;
+}
+
 /*-------- Navbar Shenanigans ---------------------------*/
 
 .navbar-default .navbar-brand {
@@ -131,6 +222,11 @@ span.spacer {
   width: 70px;
   padding: 25px 20px;
 }
+
+.navbar-doyung {
+  height: 50px;
+}
+
 .navbar-default .navbar-brand:link{
   color: #ffffff;
   background-color: #37474F;

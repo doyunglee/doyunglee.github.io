@@ -97,7 +97,7 @@ body {
 }
 
 .list-button {
-  color: #000000;
+  color: #555555;
   padding: 5px;
   background-color: #ffffff;
   letter-spacing: 1px;
@@ -157,7 +157,7 @@ body {
   font-weight: bold;
   font-size: 28px;
   position: absolute;
-  top: 50px;
+  top: 100px;
   margin-left: 15px;
   line-height: 150%
 }
@@ -168,7 +168,7 @@ body {
   font-size: 18px;
   position: absolute;
   color: #FFFFFF;
-  top: 36px;
+  top: 86px;
   margin-left: 15px;
 }
 
@@ -219,4 +219,46 @@ span.spacer {
   display: block;
   margin: 0 auto;
   padding: 20px;
+}
+
+/*-------- Navbar Shenanigans ---------------------------*/
+
+.navbar-doyung {
+  width: 100%;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  position:fixed;
+  z-index:1;
+  background-color: #ffffff;
+}
+
+.navbar-heading {
+  font-family: 'Roboto';
+  font-weight: bolder;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-align: center;
+  display: block;
+  margin: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.navbar-link {
+  color: #000000;
+}
+
+.navbar-link:hover {
+  color: #999999;
+  text-decoration: none;
+}
+
+.navbar-default .navbar-brand {
+  color: #ffffff;
+  background-color: #37474F;
+  height: 70px;
+  width: 70px;
+  padding: 25px 20px;
 }

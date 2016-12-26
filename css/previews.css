@@ -38,6 +38,7 @@ body {
   width: 100%;
   padding-left: 20%;
   padding-right: 20%;
+  padding-top: 30px;
   margin: 0 auto;
   background-color: #FFFFFF;  
 }
@@ -74,6 +75,7 @@ body {
 .header-photo {
   width: 100%;
   position: relative;
+  top: 35px;
 }
 
 .header-text {
@@ -81,7 +83,7 @@ body {
   font-weight: bold;
   font-size: 28px;
   position: absolute;
-  top: 70px;
+  top: 100px;
   margin-left: 40px;
   line-height: 150%
 }
@@ -92,7 +94,7 @@ body {
   font-size: 18px;
   position: absolute;
   color: #000000;
-  top: 56px;
+  top: 86px;
   letter-spacing: 1px;
   margin-left: 40px;
   background-color: #FD5964;
@@ -122,4 +124,37 @@ span.spacer {
 
 #sidebar-wrapper {
   width: 160px;
+}
+
+/*------------ Navbar --------*/
+.navbar-doyung {
+  width: 100%;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  position:fixed;
+  z-index:1;
+  background-color: #ffffff;
+}
+
+.navbar-heading {
+  font-family: 'Roboto';
+  font-weight: bolder;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-align: center;
+  display: block;
+  margin: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.navbar-link {
+  color: #000000;
+}
+
+.navbar-link:hover {
+  color: #999999;
+  text-decoration: none;
 }
