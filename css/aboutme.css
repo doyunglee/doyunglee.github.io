@@ -1,0 +1,32 @@
+
+
+.header-photo {
+  width: 100%;
+  min-height: 300px;
+  position: absolute;
+  z-index: -2;
+}
+
+#canvasDiv {
+  cursor: url(pencil.png), crosshair;
+}
+
+.header-text {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 28px;
+  position: absolute;
+  top: 100px;
+  margin-left: 15px;
+  line-height: 150%;
+  z-index: -1;
+}
+
+.header-text-span {
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+span.spacer {
+  padding: 0 5px;
+}
