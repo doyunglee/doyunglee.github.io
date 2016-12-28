@@ -30,3 +30,45 @@
 span.spacer {
   padding: 0 5px;
 }
+
+.navbar-doyung {
+  width: 100%;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  position:fixed;
+  z-index:1;
+  background-color: #ffffff;
+}
+
+.navbar-heading {
+  font-family: 'Roboto';
+  font-weight: bolder;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-align: center;
+  display: block;
+  margin: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.navbar-link {
+  color: #000000;
+}
+
+.navbar-link:hover {
+  color: #999999;
+  text-decoration: none;
+}
+
+.section-header {
+  font-size: 24px;
+  font-family: Roboto;
+  letter-spacing: 2px;
+  font-weight: bolder;
+  color: #444444;
+  margin-bottom: 0px;
+  margin-left: 25px;
+}

@@ -21,8 +21,10 @@
 <!-- **************** END HEAD *********************** -->
   <body>
     <!-- Sidebar -->   
-    <img src='images/mevertical.png' class="side-photo" onmouseover="this.src='images/mevertical2.png';" onmouseout="this.src='images/mevertical.png';" />
-
+    <a href="about.html">
+     <img src='images/mevertical.png' class="side-photo" onmouseover="this.src='images/mevertical2.png';" onmouseout="this.src='images/mevertical.png';" />
+    </a>
+    <a href="about.html" class="aboutme">ABOUT ME</a>
     <!-- Main Work in a section shown here-->
     <h1 id="title-top-text">DOYUNG LEE</h1>
     <div class="goodies">
@@ -129,4 +131,36 @@
                 </ul> 
             -->
     </div>
+  </body>
+  <style>
+  @media only screen and (max-width: 500px) {
+    .side-photo {
+        display: none;
+    }
+
+    #title-top-text {
+        top: -4px;
+        margin-left: 10px;
+        font-size: 24px;
+        width: 100%
+    }
+
+    .goodies {
+        top: 80px;
+    }
+
+    .photo-grid li figcaption {
+        opacity: 1;
+    }
+  }
+
+  @media only screen and (max-width: 750px) {
+    #title-top-text {
+        top: -4px;
+        margin-left: 10px;
+        font-size: 24px;
+        width: 100%
+    }
+  }
+  </style>
 <!-- /#wrapper -->

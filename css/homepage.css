@@ -213,6 +213,29 @@ span.spacer {
   background-color: #ffffff;
 }
 
+.aboutme {
+  color: #000000;
+  position: absolute;
+  top: 10px;
+  right: 40px;
+  font-size: 18px;
+  font-family: 'Roboto';
+  font-weight: bolder;
+  background-color: #FF69C4;
+  padding: 5px;
+  letter-spacing: 1px;
+}
+
+.aboutme:link{
+  color: #000000;
+  text-decoration: none;
+} 
+.aboutme:hover{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
 /*-------- Navbar Shenanigans ---------------------------*/
 
 .navbar-default .navbar-brand {
