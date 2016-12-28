@@ -31,11 +31,16 @@
         
         <img src="images/aboutme.jpg" class="header-photo" id="aboutmeimage">
     </div>
+    <h2 class="section-header">Coming Soon! Meanwhile, feel free to draw on my face.</h2>
     <script type='text/javascript'>
-        var canvasDiv = document.getElementById('canvasDiv');
+        $(window).load(function () {
+            var canvasWidth = document.getElementById('aboutmeimage').offsetWidth;
+            var canvasHeight = document.getElementById('aboutmeimage').offsetHeight;
+
+            var canvasDiv = document.getElementById('canvasDiv');
         canvas = document.createElement('canvas');
-        canvas.setAttribute('width', document.getElementById('aboutmeimage').offsetWidth);
-        canvas.setAttribute('height', document.getElementById('aboutmeimage').offsetHeight);
+        canvas.setAttribute('width', canvasWidth);
+        canvas.setAttribute('height', canvasHeight);
         canvas.setAttribute('id', 'canvas');
         canvasDiv.appendChild(canvas);
         if(typeof G_vmlCanvasManager != 'undefined') {
@@ -92,7 +97,8 @@
              context.stroke();
           }
         }
+        });
+        
     </script>
-    <h2 class="section-header">Coming Soon! Meanwhile, feel free to draw on my face.</h2>
 
     
