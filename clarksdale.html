@@ -22,6 +22,7 @@
   <div class="navbar-doyung">
       <a href="index.html" class="navbar-link"><p class="navbar-heading">DOYUNG LEE</p></a>
   </div>
+      <!-- sections opening and closing -->
   <script>
     function openSection(sectionName) {
        var i, x;
@@ -44,7 +45,8 @@
 
     <h1 class="header-text" >
       <span class="header-text-span">
-       Community Development in<span class='spacer'></span><br /><span class='spacer'></span>Coahoma County, Mississippi
+       Community Development in<span class='spacer'></span><br />
+       <span class='spacer'></span>Coahoma County, Mississippi<span class='spacer'></span>
       </span>
     </h1>
   </div>
@@ -131,3 +133,40 @@
       </div>
     </div>
   </div>
+      <!--Different sized windows!-->
+  <style>
+  @media only screen and (max-width: 780px) {
+    .body-wrapper {
+        padding-top: 0px;
+        padding-right:0px;
+    }
+  }
+ @media only screen and (max-width: 650px) {
+      .header-text {
+        font-size:20px;
+        top: 60px;
+      }
+      .header-text-span {
+        padding:5px;
+      }
+      .header-detail {
+        font-size: 12px;
+        top: 58px;
+      }
+      .header-detail-span {
+        padding: 5px;
+      }
+      .sections {
+        font-size: 14px;
+        line-height: 190%;
+      }
+      .body-wrapper {
+        padding-top: 0px;
+        padding-right:0px;
+      }
+      .header-photo {
+        height: 200px;
+        object-fit: cover;
+      }
+  }
+  </style>

@@ -97,7 +97,7 @@ body {
 }
 
 .list-button {
-  color: #555555;
+  color: #777777;
   padding: 5px;
   background-color: #ffffff;
   letter-spacing: 1px;
@@ -136,8 +136,7 @@ body {
 
 .header-photo {
   width: 100%;
-  min-height: 300px;
-  position: relative;
+  height: auto;
 }
 
 .content-photo {
@@ -204,15 +203,6 @@ span.spacer {
 
 #sidebar-wrapper {
   width: 160px;
-}
-
-#bigvideo { 
-  position: relative;
-  padding: 0;
-  display: block;
-  margin: 0 auto;
-  max-height: 100%;
-  max-width: 100%;
 }
 
 .video-layout {
