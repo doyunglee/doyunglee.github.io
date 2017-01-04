@@ -12,6 +12,7 @@ body {
   font-weight: bolder;
   top: -10px;
   margin-left: 250px;
+  margin-bottom: 0px;
   position: absolute;
   line-height: 92%;
 }
@@ -237,7 +238,7 @@ span.spacer {
 
 .contact {
   position: absolute;
-  top: 80px;
+  top: 90px;
   font-size: 14px;
   margin-left: 255px;
   font-family: 'Droid Sans Mono', monospace;
