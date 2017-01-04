@@ -1,14 +1,14 @@
 
 /*full body of the site*/
 body {
-  background-color: #FFFFFF;  
+  background-color: #FFFFFF; 
 }
 
 #title-top-text {
   letter-spacing: 7px;
   font-size: 75px;
   font-family: 'Roboto';
-  width: 300px;
+  width: 600px;
   font-weight: bolder;
   top: -10px;
   margin-left: 250px;
@@ -235,6 +235,14 @@ span.spacer {
   text-decoration: none;
 }
 
+.contact {
+  position: absolute;
+  top: 80px;
+  font-size: 14px;
+  margin-left: 255px;
+  font-family: 'Droid Sans Mono', monospace;
+  font-weight: lighter;
+}
 
 /*-------- Navbar Shenanigans ---------------------------*/
 

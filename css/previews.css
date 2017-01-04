@@ -158,3 +158,9 @@ span.spacer {
   color: #999999;
   text-decoration: none;
 }
+
+.footer {
+  margin-top: 10px;
+  height: 20px;
+  background-color: #ffffff;
+}

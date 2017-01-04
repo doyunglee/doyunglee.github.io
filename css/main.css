@@ -41,6 +41,7 @@ body {
 
 .section-text {
   font-size: 16px;
+  font-family: 'Roboto';
   line-height: 150%;
   letter-spacing: 1px;
   font-weight: lighter;
@@ -251,4 +252,10 @@ span.spacer {
   height: 70px;
   width: 70px;
   padding: 25px 20px;
+}
+
+.footer {
+  margin-top: 10px;
+  height: 40px;
+  background-color: #ffffff;
 }

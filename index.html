@@ -27,6 +27,7 @@
     <a href="about.html" class="aboutme">ABOUT ME</a>
     <!-- Main Work in a section shown here-->
     <h1 id="title-top-text">DOYUNG LEE</h1>
+    <p class="contact">email: leedoyung(at)gmail.com</a>
     <div class="goodies">
             <!-- FAST FACTS -->
             <h2 class="sidebar-list">FEATURED:</h2>
@@ -133,6 +134,21 @@
     </div>
   </body>
   <style>
+  @media only screen and (max-width: 900px) {
+    #title-top-text {
+        top: -4px;
+        margin-left: 10px;
+        font-size: 30px;
+        letter-spacing: 3px;
+        width: 250px;
+    }
+
+    .contact {
+        top: 50px;
+        margin-left: 10px;
+        font-size: 14px;
+    }
+  }
   @media only screen and (max-width: 500px) {
     .side-photo {
         display: none;
@@ -144,6 +160,12 @@
         font-size: 24px;
         width: 250px;
         letter-spacing: 3px;
+    }
+
+    .contact {
+        top: 40px;
+        margin-left: 10px;
+        font-size: 12px;
     }
 
     .goodies {
@@ -159,15 +181,6 @@
        top: 10px;
        position: absolute;
        right: 10px;
-    }
-  }
-
-  @media only screen and (max-width: 750px) {
-    #title-top-text {
-        top: -4px;
-        margin-left: 10px;
-        font-size: 24px;
-        width: 250px;
     }
   }
   </style>
