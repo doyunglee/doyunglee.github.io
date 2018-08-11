@@ -26,8 +26,9 @@
     </a>
     <a href="about.html" class="aboutme">ABOUT ME</a>
     <!-- Main Work in a section shown here-->
-    <h1 id="title-top-text">DOYUNG LEE</h1>
-    <p class="contact">email: leedoyung(at)gmail.com</a>
+    <h1 id="title-top-text" >
+        <img src='images/DoyungLee1.png'class="name-photo"/>
+    </h1>
     <div class="goodies">
             <!-- FAST FACTS -->
             <h2 class="sidebar-list">FEATURED:</h2>
@@ -145,7 +146,7 @@
     </div>
   </body>
   <style>
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 950px) {
     #title-top-text {
         top: -4px;
         margin-left: 10px;
@@ -159,10 +160,27 @@
         margin-left: 10px;
         font-size: 14px;
     }
+
+    .name-photo {
+        height: 80px;
+        margin-left:60%;
+
+    }
+  }
+  @media only screen and (max-width: 700px) {
+    .name-photo {
+        height: 60px;
+        margin-left:20%;
+    }
   }
   @media only screen and (max-width: 500px) {
     .side-photo {
         display: none;
+    }
+
+    .name-photo {
+        height: 30px;
+        margin-left:5%;
     }
 
     #title-top-text {

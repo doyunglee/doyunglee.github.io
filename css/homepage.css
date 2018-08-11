@@ -39,6 +39,11 @@ body {
   position: relative;
 }
 
+.name-photo {
+  height: 110px;
+}
+
+
 .goodies {
   position: absolute;
   top:160px;
