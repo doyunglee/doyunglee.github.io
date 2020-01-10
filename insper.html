@@ -7,118 +7,44 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Insper University</title>
+    <title>Lauching an Engineer School in in São Paulo</title>
 <!-- Include jQuery -->
-    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+  	<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+<!-- PJ5.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
 <!-- Bootstrap core CSS -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 <!-- My CSS -->
-    <link href="css/previews.css" type="text/css" rel="stylesheet">
+    <link href="css/main2.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:bolder" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono: 400, 400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans: 400, 400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
   </head>
-<!-- **************** END HEAD *********************** --> 
+  <!-- **************** END HEAD *********************** -->
   <div class="navbar-doyung">
-      <a href="index.html" class="navbar-link"><p class="navbar-heading">DOYUNG LEE</p></a>
+    <a href="index.html" class="navbar-link"><p class="navbar-heading">&lt; Home</p></a>
   </div>
-    <body>
-        <div class="header-wrapper">
-            <img src="images/insperband.jpg" class="header-photo">
-            <p class="header-detail"><span class="header-detail-span" id="detail-color">AN OVERVIEW OF:</span></p>
-
-            <h1 class="header-text">
-              <span class="header-text-span">
-               Launching an Engineering School<span class='spacer'></span><br /><span class='spacer'></span>in São Paulo
-              </span>
-            </h1>
-        </div>
-        <div class="body-wrapper">
-        <br/>
-        <h2 class="section-header">My Role</h2>
-          <p class="section-text">
-          Education Design Consultant at Insper University
-          </p>
-        <h2 class="section-header">Things I Did</h2>
-          <p class="section-text">
-          \\ Helped design curriculum for the engineering program<br/>
-          \\ Designed and tested engineering challenges for students
-          </p>
-        <h2 class="section-header">Overview</h2>
-          <p class="section-text">
-          I spent the fall semester of 2014 at Insper University, a school in São Paulo, Brazil. There, I worked with faculty to help develop an engineering program that would be piloted the following semester. We explored how we could create a learning style and culture similar to that of Olin College, but in the context of Insper University. A challenge was working with restrictions from the Brazilian Ministry of Education, balancing existing and potential student life, and cultural differences.
-          </p>
-          <p class="majorkey">
-          KEY TAKEAWAYS: Designers have to be flexible when trying to implement a model into a different context. The cultural and environmental changes should be seen as opportunities to improve the existing model. 
-          </p><br/>
-        </div>
-    </body>
-    <div class="footer"></div>
-
-        <!--Different sized windows!-->
-    <style>
-    @media only screen and (max-width: 900px) {
-      .header-text {
-          font-size:20px;
-          top: 60px;
-        }
-        .header-text-span {
-          padding:5px;
-        }
-        .header-detail {
-          font-size: 12px;
-          top: 58px;
-        }
-        .header-detail-span {
-          padding: 5px;
-        }
-    }
-    @media only screen and (max-width: 780px) {
-      .body-wrapper {
-          padding-top: 0px;
-          padding-right:0px;
-      }
-      .header-photo {
-          height: 200px;
-          object-fit: cover;
-      }
-      .body-wrapper {
-          padding-top: 30px;
-          padding-right:12px;
-          padding-left:12px;
-      }
-      .header-detail {
-          margin-left: 12px;
-      }
-      .header-text {
-          margin-left: 12px;
-      }
-    }
-   @media only screen and (max-width: 650px) {
-        .header-text {
-          font-size:20px;
-          top: 60px;
-          margin-left: 12px;
-        }
-        .header-text-span {
-          padding:5px;
-        }
-        .header-detail {
-          font-size: 12px;
-          top: 58px;
-          margin-left: 12px;
-        }
-        .header-detail-span {
-          padding: 5px;
-        }
-        .sections {
-          font-size: 14px;
-          line-height: 190%;
-        }
-        .header-photo {
-          height: 200px;
-          object-fit: cover;
-        }
-    }
-    </style>
-</html>
+  <div class="header-wrapper" style="background-color: #22603C"> 
+    <h1>Lauching an Engineer School in in São Paulo</h1>
+  </div>
+  <div class="body-wrapper">
+    </br>
+    </br>
+    </br>
+    <p id="regular-text"> I spent the fall semester of 2014 at Insper University as an Education Design Consultant. There, I worked with faculty to help develop an engineering program that would be piloted the following semester. We explored how we could create a learning style and culture similar to that of Olin College, but in the context of Insper University. A challenge was working with restrictions from the Brazilian Ministry of Education, balancing existing and potential student life, and cultural differences.</p>
+    <img src="images/insper/students.png" class="content-photo-big">
+    <p id="photo-caption">An Olin student working with an Insper Engineering student.</p>
+    <br>
+    <p id="majorkey">
+    KEY TAKEAWAYS: Designers have to be flexible when trying to implement a model into a different context. The cultural and environmental changes should be seen as opportunities to improve the existing model.
+    </p>
+    <br>
+    <br>
+    <br>
+  </div>
+  <!--Calling the P5.JS script:-->
+  <script src="javascript/insper.js"></script>
+  </body>
+<!--Different sized windows!-->

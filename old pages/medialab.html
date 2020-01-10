@@ -1,0 +1,107 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>MIT Media Lab</title>
+<!-- Include jQuery -->
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+<!-- Bootstrap core CSS -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- My CSS -->
+    <link href="css/previews.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:bolder" rel="stylesheet">
+  </head>
+<!-- **************** END HEAD *********************** --> 
+  <div class="navbar-doyung">
+      <a href="index.html" class="navbar-link"><p class="navbar-heading">DOYUNG LEE</p></a>
+  </div>
+    <body>
+        <div class="header-wrapper">
+            <img src="images/medialabband.jpg" class="header-photo">
+            <p class="header-detail"><span class="header-detail-span" id="detail-color">AN OVERVIEW OF:</span></p>
+
+            <h1 class="header-text">
+              <span class="header-text-span">
+               Creating a Mobile Tool for<span class='spacer'></span><br /><span class='spacer'></span>Adult learners
+              </span>
+            </h1>
+        </div>
+        <div class="body-wrapper">
+        <br/>
+        <h2 class="section-header">My Role</h2>
+          <p class="section-text">
+          Mobile Developer at The Media Lab
+          </p>
+        <h2 class="section-header">Things I Did</h2>
+          <p class="section-text">
+          \\ Programmed Regex for responses in Askii<br/>
+          </p>
+        <h2 class="section-header">Overview</h2>
+          <p class="section-text">
+          I worked at the Lifelong Kindergarten lab at the MIT Media Lab during the Spring of 2015. I was a developer for a tool called Askii. Askii is a mobile learning tool that you can run through SMS, which allows people without smartphones to use it as well. Using SMS, Askii will start study sessions with the user, and let them study and take quizzes. Our example use case was a citizenship exam study tool for adult learners who study during their commute. 
+          </p>
+          <p class="majorkey">
+          KEY TAKEAWAY: The method of accessing a tool is very important to keep in mind when designing something for users.
+          </p><br/>
+        </div>
+    </body>
+    <div class="footer"></div>
+
+        <!--Different sized windows!-->
+    <style>
+    @media only screen and (max-width: 780px) {
+      .body-wrapper {
+          padding-top: 0px;
+          padding-right:0px;
+      }
+      .header-photo {
+          height: 200px;
+          object-fit: cover;
+      }
+      .body-wrapper {
+          padding-top: 30px;
+          padding-right:12px;
+          padding-left:12px;
+      }
+      .header-detail {
+          margin-left: 12px;
+      }
+      .header-text {
+          margin-left: 12px;
+      }
+    }
+   @media only screen and (max-width: 650px) {
+        .header-text {
+          font-size:20px;
+          top: 60px;
+          margin-left: 12px;
+        }
+        .header-text-span {
+          padding:5px;
+        }
+        .header-detail {
+          font-size: 12px;
+          top: 58px;
+          margin-left: 12px;
+        }
+        .header-detail-span {
+          padding: 5px;
+        }
+        .sections {
+          font-size: 14px;
+          line-height: 190%;
+        }
+        .header-photo {
+          height: 200px;
+          object-fit: cover;
+        }
+    }
+    </style>
+</html>

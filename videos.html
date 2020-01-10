@@ -7,134 +7,72 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Storytelling Through Video</title>
+    <title>Telling Stories Through Video</title>
 <!-- Include jQuery -->
   	<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+<!-- PJ5.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
 <!-- Bootstrap core CSS -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 <!-- My CSS -->
-    <link href="css/main.css" type="text/css" rel="stylesheet">
+    <link href="css/main2.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:bolder" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono: 400, 400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans: 400, 400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
   </head>
-<!-- **************** END HEAD *********************** -->
+  <!-- **************** END HEAD *********************** -->
   <div class="navbar-doyung">
-      <a href="index.html" class="navbar-link"><p class="navbar-heading">DOYUNG LEE</p></a>
+    <a href="index.html" class="navbar-link"><p class="navbar-heading">&lt; Home</p></a>
   </div>
-  <script>
-    function openSection(sectionName) {
-       var i, x;
-       x = document.getElementsByClassName("section");
-       for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none"; 
-       }
-    document.getElementById(sectionName).style.display = "block";
-    }
-    $(function() {
-      $('.list-button').on('click', function(){
-        $('.list-button').removeClass('selected');
-        $(this).addClass('selected');
-      }); 
-    });
-  </script>
-  <div class="header-wrapper">
-    <img src="images/videohead.jpg" class="header-photo">
-    <p class="header-detail"><span class="header-detail-span" id="investigating">Videography</span></p>
-
-    <h1 class="header-text" >
-      <span class="header-text-span">
-       Telling Stories Through<span class='spacer'></span><br /><span class='spacer'></span>Video
-      </span>
-    </h1>
+  <div class="header-wrapper" style="background-color:#bcdee7">
+    <h1>Telling Stories Through Video</h1>
   </div>
-  <div class="row">
-    <div class="col-md-3">
-      <ul class="sections">
-        <li><a class="list-button selected" href="javascript:void(0)" onclick="openSection('Overview')">Overview</a></li>
-        <li><a class="list-button" href="javascript:void(0)" onclick="openSection('Olin Relationships')">Olin Relationships</a></li>
-        <li><a class="list-button" href="javascript:void(0)" onclick="openSection('Help REVO')">Help REVO Compete!</a></li>
-      </ul>
-    </div>
-    <div class="col-md-9">
-      <div class="body-wrapper">
-        <div id="Overview" class="section">
-          <h2 class="section-header">How can I use videos to tell stories and as a tool for self-reflection?</h2>
-          <p class="section-text">
-          I love video. It is my favorite medium for preserving memories and telling stories. I've also been exploring filmmaking as a self-reflection tool. Here is some of my work. Enjoy!
-          </p>
-        </div>
-        <div id="Olin Relationships" class="section" style="display:none">
-          <h2 class="section-header-videos">Olin Relationships (2016)</h2>
-            <p class="section-text">
-            As a school with fewer than 360 students, Olin cultivates very interesting relationships. <i>Olin Relationships</i> is a film I directed that allowed friends, couples, siblings, and teammates to animate what their relationships mean to them. The conversations they had while drawing on the frames were overlaid into the film as the audio.
-            </p>
-            <img src="images/olinrelationshipsfriends.jpg" class="content-photo">
-            <p class="caption">
-            Two friends draw on the individual frames of their scene. I recorded their reflections on their friendship and used it as the film's audio.
-            </p>
-            <br/>
-            <img src="images/olinrelationshipsprocess.jpg" class="content-photo">
-            <p class="caption">
-            From paper to video: I cut every frame that the Olin students drew, and converted them into video using a homemade rig (camera, clamps, and a clothes iron for counterweight).
-            </p>
-            <br/>
-            <p class="section-text">
-            Here's the final product! Thanks to all who participated.
-            </p>
-            <iframe width="560" height="350" src="https://www.youtube.com/embed/6jixsQ1A9so" frameborder="0" allowfullscreen class="video-layout"></iframe>
-            <br/>
-        </div>
-        <div id="Help REVO" class="section" style="display:none">
-          <h2 class="section-header-videos">Help REVO Compete! (2016)</h2>
-            <p class="section-text">
-            I made this video for a crowdfunding campaign for Olin's electric racing team (REVO). With this video, the team was able to raise over $2000 and go to competitions.
-            </p>
-            <iframe  width="560" height="350" src="https://www.youtube.com/embed/phNuzvhPjeQ" frameborder="0" allowfullscreen class="video-layout"></iframe>
-            <br/>
-        </div>
-      </div>
-    </div>
-    <div class="footer"></div>
+  <div class="body-wrapper">
+    </br>
+    </br>
+    </br>
+    <p id="regular-text"> I love making videos, it's one of my favorite ways to tell stories. Here's a small sample. Enjoy!</p>
+    <br>
+    <br>
+    <h2 class="section-header">Golden Equinox Video for IMAGINE (2019)</h2>
+    <p id="regular-text">
+    I worked with mural artist IMAGINE to make a teaser video for her show <i>Golden Equinox</i>. You can check out the video and IMAGINE's work on her instagram: <a href="https://www.instagram.com/p/BvZgsJFh2yk">https://www.instagram.com/p/BvZgsJFh2yk</a>
+    <iframe width="750" height="450" src="https://player.vimeo.com/video/382839238" frameborder="0" allowfullscreen class="video-layout"></iframe>
+    <br>
+    <br>
+    <h2 class="section-header">Olin Relationships (2016)</h2>
+    <p id="regular-text">
+    As a school with fewer than 360 students, Olin cultivates very interesting relationships. <i>Olin Relationships</i> is a film I directed that allowed friends, couples, siblings, and teammates to animate what their relationships mean to them. The conversations they had while drawing on the frames were overlaid into the film as the audio.
+    </p>
+    <img src="images/olinrelationshipsfriends.jpg" class="content-photo-big">
+    <p id="photo-caption">
+    Two friends draw on the individual frames of their scene. I recorded their reflections on their friendship and used it as the film's audio.
+    </p>
+    <br>
+    <img src="images/olinrelationshipsprocess.jpg" class="content-photo-big">
+    <p id="photo-caption">
+    From paper to video: I cut every frame that the Olin students drew, and converted them into video using a homemade rig (camera, clamps, and a clothes iron for counterweight).
+    </p>
+    <br>
+    <p id="regular-text">
+    Here's the final product! Thanks to all who participated.
+    </p>
+    <iframe width="750" height="500" src="https://www.youtube.com/embed/6jixsQ1A9so" frameborder="0" allowfullscreen class="video-layout"></iframe>
+    <br>
 
-<style>
-  @media only screen and (max-width: 650px) {
-      .header-text {
-        font-size:20px;
-        top: 60px;
-      }
-      .header-text-span {
-        padding:5px;
-      }
-      .header-detail {
-        font-size: 12px;
-        top: 58px;
-      }
-      .header-detail-span {
-        padding: 5px;
-      }
-      .sections {
-        font-size: 14px;
-        line-height: 190%;
-      }
-      .body-wrapper {
-        padding-top: 0px;
-        padding-right:0px;
-      }
-      .header-photo {
-        height: 200px;
-        object-fit: cover;
-      }
-      .video-layout {
-        width: 280px;
-        height: 200px;
-      }
-  }
-  @media only screen and (max-width: 780px) {
-    .body-wrapper {
-        padding-top: 0px;
-        padding-right:0px;
-    }
-  }
-  </style>
+    <br>
+    <br>
+    <h2 class="section-header">Help REVO Compete! (2016)</h2>
+    <p id="regular-text">
+    I made this video for a crowdfunding campaign for Olin's electric racing team (REVO). With this video, the team was able to raise over $2000 and go to competitions.
+    </p>
+    <iframe  width="750" height="500" src="https://www.youtube.com/embed/phNuzvhPjeQ" frameborder="0" allowfullscreen class="video-layout"></iframe>
+    <br>
+    <br>
+  </div>
+  <!--Calling the P5.JS script:-->
+  <script src="javascript/videosketch.js"></script>
+  </body>
+<!--Different sized windows!-->

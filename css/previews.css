@@ -145,8 +145,9 @@ span.spacer {
 }
 
 .navbar-heading {
-  font-family: 'Roboto';
+  font-family: 'IBM Plex Mono';
   font-weight: bolder;
+  font-style: italic;
   font-size: 18px;
   letter-spacing: 1px;
   text-align: center;

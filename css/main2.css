@@ -1,0 +1,177 @@
+@font-face {
+	font-family: 'Domaine';
+	src: url('css/fonts/DomaineDispNar-BoldItalic.otf') format('otf');
+	src: url('css/fonts/DomaineDispNar-Bold.otf') format('otf');
+	src: url('css/fonts/DomaineDispNar-MediumItalic.otf') format('otf');
+	src: url('css/fonts/DomaineDispNar-RegularItalic.otf') format('otf');
+}
+
+/*----header bar ---*/
+.navbar-doyung {
+  width: 100%;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  position:fixed;
+  z-index:3;
+  background-color: #ffffff;
+}
+
+.navbar-heading {
+	font-family: 'IBM Plex Mono';
+	font-weight: bold;
+	font-size: 18px;
+	letter-spacing: 1px;
+	text-align: center;
+	display: block;
+	margin: 0px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 100%;
+}
+
+.navbar-link {
+	color: #000000;
+}
+
+.navbar-link:hover {
+	color: #999999;
+	text-decoration: none;
+}
+
+.navbar-default .navbar-brand {
+	color: #ffffff;
+	background-color: #37474F;
+	height: 70px;
+	width: 70px;
+	padding: 25px 20px;
+}
+
+h1{
+	padding-left: 50px;
+	padding-right:50px;
+	position: relative;
+	text-align: center;
+	font-family: 'DomaineDispNar-Bolditalic';
+	color: #ffffff;
+	letter-spacing: 2.5px;
+	font-size: 50px;
+	text-align: center;
+	z-index: 2;
+	display: table-cell;
+	vertical-align:middle;
+}
+/*----header section -----*/
+.header-wrapper {
+	height:345px;
+	background-color: #FFCC3C;
+	text-align:center; 
+    display:table;
+    width: 100%;
+}
+
+/*----body -----*/
+.body-wrapper {
+	margin-top: 80px;
+	margin-left: 17%;
+	margin-right: 17%;
+	background-color: #FFFFFF; 
+}
+
+#regular-text {
+	text-align: left;
+	color: #333333;
+	font-family: 'Karla'; 
+	font-size: 18px;
+	letter-spacing: 0.5px;
+	line-height: 1.7em;
+}
+
+#majorkey {
+	text-align: left;
+	color: #333333;
+	font-family: 'Karla'; 
+	font-weight: bold;
+	font-style: italic;
+	font-size: 18px;
+	letter-spacing: 0.5px;
+	line-height: 1.7em;
+}
+
+/*----- quotes ----*/
+#quote-style {
+	font-family: 'DomaineDispNar-MediumItalic';
+	font-style: italic;
+	font-size: 27px;
+	color: #666666;
+	text-align: center;
+}
+
+/*---- h2 stuff --*/
+.section-header {
+	text-align: left;
+	font-family: 'DomaineDispNar-BoldItalic';
+	font-style: italic;
+	color: #333333;
+	letter-spacing: 0.5px;
+}
+
+
+/*---photos ----*/
+.content-photo-big {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 700px;
+}
+
+.content-photo-med {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 600px;
+}
+
+.content-photo-small {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 480px;
+}
+
+#photo-caption {
+	text-align: center;
+	font-size: 14px;
+	margin-left: 15%;
+	margin-right: 15%;
+	letter-spacing: 0.5px;
+	color: #888888;
+	line-height: 1.5em;
+}
+
+#photo-caption-small {
+	text-align: center;
+	font-size: 14px;
+	margin-left: 20%;
+	margin-right: 20%;
+	letter-spacing: 0.5px;
+	color: #888888;
+	line-height: 1.5em;
+}
+
+/*---Videos----*/
+.video-layout {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.center-weird-stuff {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+
