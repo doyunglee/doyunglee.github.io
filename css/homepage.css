@@ -3,6 +3,7 @@
 @font-face {
   font-family: 'Domaine';
   src: url('css/fonts/DomaineDispNar-BoldItalic.otf') format('otf');
+  src: url('css/fonts/DomaineDispNar-BoldItalic.ttf') format('ttf');
 }
 
 body {
