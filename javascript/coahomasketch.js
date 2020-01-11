@@ -3,7 +3,7 @@ let img; // Declare variable 'img'.
 function setup() {
   let sticker_canvas = createCanvas(windowWidth*0.985, 345);
   sticker_canvas.position(0,0);
-  sticker = loadImage('images/stickers/coahomaclear.png'); // Load the image
+  sticker = loadImage('Images/stickers/coahomaclear.png'); // Load the image
 }
 
 function draw() {
