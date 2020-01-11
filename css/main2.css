@@ -1,7 +1,9 @@
 @font-face {
 	font-family: 'Domaine';
 	src: url('css/fonts/DomaineDispNar-BoldItalic.otf') format('otf');
+	src: url('css/fonts/DomaineDispNar-BoldItalic.otf') format('ttf');
 	src: url('css/fonts/DomaineDispNar-Bold.otf') format('otf');
+	src: url('css/fonts/DomaineDispNar-Bold.otf') format('ttf');
 	src: url('css/fonts/DomaineDispNar-MediumItalic.otf') format('otf');
 	src: url('css/fonts/DomaineDispNar-RegularItalic.otf') format('otf');
 }
