@@ -6,6 +6,12 @@
   src: url('css/fonts/DomaineDispNar-BoldItalic.ttf') format('ttf');
 }
 
+.preload { 
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
 body {
   background-color: #FFFFFF; 
 }
