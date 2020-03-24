@@ -1,10 +1,5 @@
 
 /*full body of the site*/
-@font-face {
-  font-family: 'Domaine Bold';
-  src: url('css/fonts/DomaineDispNar-BoldItalic.otf') format('opentype');
-  src: url('css/fonts/DomaineDispNar-BoldItalic.ttf') format('ttf');
-}
 
 .preload { 
     position: absolute;
@@ -92,12 +87,12 @@ span.spacer {
 /*-- Stuff like "DESIGN:" "ART:" "FEATURED:" etc --*/
 .sidebar-list {
   margin-top: 10px;
-  font-size: 30px;
+  font-size: 28px;
   font-weight: bold;
   font-style: italic;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.5px;
   color: #333333;
-  font-family: 'Domaine Bold';
+  font-family: 'Montserrat';
 }
 
 .sidebar-list-links {
