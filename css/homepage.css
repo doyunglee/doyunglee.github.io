@@ -1,8 +1,8 @@
 
 /*full body of the site*/
 @font-face {
-  font-family: 'Domaine';
-  src: url('css/fonts/DomaineDispNar-BoldItalic.otf') format('otf');
+  font-family: 'Domaine Bold';
+  src: url('css/fonts/DomaineDispNar-BoldItalic.otf') format('opentype');
   src: url('css/fonts/DomaineDispNar-BoldItalic.ttf') format('ttf');
 }
 
@@ -97,7 +97,7 @@ span.spacer {
   font-style: italic;
   letter-spacing: 1.5px;
   color: #333333;
-  font-family: 'DomaineDispNar-BoldItalic';
+  font-family: 'Domaine Bold';
 }
 
 .sidebar-list-links {
