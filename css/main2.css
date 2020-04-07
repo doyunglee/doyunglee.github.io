@@ -1,12 +1,3 @@
-@font-face {
-	font-family: 'Domaine';
-	src: url('css/fonts/DomaineDispNar-BoldItalic.otf') format('otf');
-	src: url('css/fonts/DomaineDispNar-BoldItalic.ttf') format('ttf');
-	src: url('css/fonts/DomaineDispNar-Bold.otf') format('otf');
-	src: url('css/fonts/DomaineDispNar-Bold.ttf') format('ttf');
-	src: url('css/fonts/DomaineDispNar-MediumItalic.otf') format('otf');
-	src: url('css/fonts/DomaineDispNar-RegularItalic.otf') format('otf');
-}
 
 /*----header bar ---*/
 .navbar-doyung {
@@ -77,8 +68,8 @@ h1{
 /*----body -----*/
 .body-wrapper {
 	margin-top: 80px;
-	margin-left: 17%;
-	margin-right: 17%;
+	margin-left: 20%;
+	margin-right: 20%;
 	background-color: #FFFFFF; 
 }
 
@@ -104,7 +95,7 @@ h1{
 
 /*----- quotes ----*/
 #quote-style {
-	font-family: 'DomaineDispNar-MediumItalic';
+	font-family: 'Montserrat';
 	font-style: italic;
 	font-size: 27px;
 	color: #666666;
@@ -114,10 +105,9 @@ h1{
 /*---- h2 stuff --*/
 .section-header {
 	text-align: left;
-	font-family: 'DomaineDispNar-BoldItalic';
-	font-style: italic;
+	font-family: 'Montserrat';
 	color: #333333;
-	letter-spacing: 0.5px;
+	letter-spacing: 0.1px;
 }
 
 
