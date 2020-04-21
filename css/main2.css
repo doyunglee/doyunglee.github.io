@@ -13,7 +13,7 @@
 
 .navbar-heading {
 	font-family: 'IBM Plex Mono';
-	font-weight: bold;
+	font-weight: 400;
 	font-size: 18px;
 	letter-spacing: 1px;
 	text-align: center;
@@ -65,53 +65,96 @@ h1{
     width: 100%;
 }
 
+.header-wrapper-image {
+	background-color: #FFCC3C;
+	text-align:center; 
+    display:table;
+    width: 100%;
+}
+
 /*----body -----*/
 .body-wrapper {
 	margin-top: 80px;
-	margin-left: 20%;
-	margin-right: 20%;
+	margin-left: 24%;
+	margin-right: 24%;
 	background-color: #FFFFFF; 
 }
 
 #regular-text {
 	text-align: left;
-	color: #333333;
+	color: #111111;
 	font-family: 'Karla'; 
-	font-size: 18px;
-	letter-spacing: 0.5px;
+	font-size: 15px;
 	line-height: 1.7em;
 }
 
 #majorkey {
 	text-align: left;
-	color: #333333;
+	color: #111111;
 	font-family: 'Karla'; 
-	font-weight: bold;
+	font-weight: 700;
 	font-style: italic;
-	font-size: 18px;
-	letter-spacing: 0.5px;
+	font-size: 16px;
 	line-height: 1.7em;
 }
 
 /*----- quotes ----*/
 #quote-style {
-	font-family: 'Montserrat';
+	font-family: 'Karla';
 	font-style: italic;
-	font-size: 27px;
-	color: #666666;
+	font-size: 22px;
+	color: #343434;
 	text-align: center;
 }
 
 /*---- h2 stuff --*/
 .section-header {
 	text-align: left;
-	font-family: 'Montserrat';
+	font-family: 'IBM Plex Mono';
+	font-weight: 600;
 	color: #333333;
 	letter-spacing: 0.1px;
 }
 
+/*---- h4 stuff --*/
+.projoverview {
+	text-align: left;
+	font-family: 'IBM Plex Mono';
+	font-weight: 600;
+	font-size: 16px;
+	color: #FF36B0;
+	letter-spacing: 0.1px;
+	margin-bottom: 5px;
+}
+
+.overviewbox {
+	background-color: #dfdfdf;
+	padding: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-bottom: 50px;
+	border-radius: 10px;
+}
+
+.overviewtext {
+	text-align: left;
+	font-family: 'Karla';
+	font-weight: 400;
+	font-size: 16px;
+	color: #343434;
+	letter-spacing: 0.1px;
+	padding-bottom: 10px;
+	margin: 0px;
+}
 
 /*---photos ----*/
+.content-photo-header {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+}
+
 .content-photo-big {
 	display: block;
 	margin-left: auto;
@@ -151,6 +194,22 @@ h1{
 	letter-spacing: 0.5px;
 	color: #888888;
 	line-height: 1.5em;
+}
+
+.iframe-container {
+  overflow: hidden;
+  /*-- Calculated from the aspect ration of the content (in case of 16:9 it is 9/16= 0.5625)--*/
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.iframe-container iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
 }
 
 /*---Videos----*/
