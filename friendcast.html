@@ -1,0 +1,127 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Creative Learning in Public Libraries</title>
+<!-- Include jQuery -->
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+<!-- PJ5.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+<!-- Bootstrap core CSS -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- My CSS -->
+    <link href="css/main2.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono: 400, 400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans: 400, 400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:600" rel="stylesheet">
+  </head>
+  <!-- **************** END HEAD *********************** -->
+  <div class="navbar-doyung">
+    <a href="index.html" class="navbar-link"><p class="navbar-heading">&lt; Home</p></a>
+  </div>
+  <div class="header-wrapper" style="background-color: #E26E79">
+    <h1>Audio Diaries Between Friends</h1>
+  </div>
+  <div class="body-wrapper">
+    <div class="audiocontainer">
+      <audio controls class="audioplay">
+        <source src="friendcast/jeff.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+      </audio>
+    </div>
+    <p id="photo-caption">Jeff</p>
+    <div class="audiocontainer">
+      <audio controls class="audioplay">
+        <source src="friendcast/alisha.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+      </audio>
+    </div>
+    <p id="photo-caption">Alisha</p>
+    <div class="audiocontainer">
+      <audio controls class="audioplay">
+        <source src="friendcast/piera.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+      </audio>
+    </div>
+    <p id="photo-caption">Piera</p>
+    <div class="audiocontainer">
+      <audio controls class="audioplay">
+        <source src="friendcast/aidan.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+      </audio>
+    </div>
+    <p id="photo-caption">Aidan</p>
+  </div>
+    <!--Calling the P5.JS script:-->
+  <script src="javascript/publiclibrary.js"></script>
+  </body>
+  <style>
+  @media only screen and (max-width: 780px) {
+    .body-wrapper {
+        margin-left: 10%;
+        margin-right: 10%;
+        background-color: #FFFFFF; 
+    }
+    #regular-text {
+        font-size: 16px;
+    }
+
+    .section-header {
+        font-size: 20px;
+    }
+
+    .content-photo-med {
+        width: 100%;
+    }
+
+    .content-photo-small {
+        width: 100%;
+    }
+
+    .content-photo-big {
+        width: 100%;
+    }
+
+    #photo-caption {
+        font-size: 12px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    #photo-caption-small {
+        font-size: 12px;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+  }
+  @media only screen and (max-width: 650px) {
+    .body-wrapper {
+        margin-left: 10%;
+        margin-right: 10%;
+        background-color: #FFFFFF; 
+    }
+    #regular-text {
+        font-size: 14px;
+    }
+
+    .section-header {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+  }
+  </style>
+<!--Different sized windows!-->
